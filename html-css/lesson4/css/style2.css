@@ -1,0 +1,44 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	width: 100%;
+	background-color: #a64dff;	
+}
+
+nav {
+	width: 900px;
+	height: 40px;
+	margin: 5px auto;
+	font: 18px/40px "Economica", sans-serif;
+}
+
+a {
+	float: left;
+	height: 40px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 15px;
+}
+
+a:last-child {
+	float:right;
+}
+
+a:hover,
+a:focus,
+a.active {
+	background-color: #eee;
+	color: #a0a0a0;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
