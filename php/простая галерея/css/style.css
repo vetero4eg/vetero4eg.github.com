@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+html, body{
+	width: 100%;
+}
+body{
+	background: #ffc;
+}
+h1{
+	text-align: center;
+}
+img{
+	margin: 0.3em;
+	border: 0.3em solid green;
+}
+form{
+	margin: 1em 5%;
+}
+div{
+	width: 90%;
+	height: 40em;
+	display: block;
+	margin: 0 auto;
+}
+nav{
+	width: 8em;
+	display: block;
+	float: right;
+	text-align: center;
+	padding: 1em;
+	background: green;
+}
+nav>a{
+	color: white;
+	text-decoration: none;
+}
