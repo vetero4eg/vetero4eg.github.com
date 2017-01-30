@@ -1,0 +1,29 @@
+<!--
+Ноль чётный. Единица нечётная. У любого числа N чётность такая же, как у N-2.
+Напишите рекурсивную функцию isEven согласно этим правилам. Она должна принимать
+число и возвращать булевское значение.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Четность числа рекурсивной функцией</title>
+	<script type="text/javascript">
+		var a;
+		function isEven(a){
+			if (a < 0) a *= -1;
+
+			if (a == 0) return true;
+			else if (a == 1) return false;
+			else return isEven(a-2);
+		};
+
+		console.log(isEven(-8));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

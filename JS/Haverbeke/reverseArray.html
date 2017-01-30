@@ -1,0 +1,43 @@
+<!--
+	В качестве упражнения напишите две функции, reverseArray и reverseArrayInPlace.
+	Первая получает массив как аргумент и выдаёт новый массив, с обратным порядком элементов.
+	Вторая работает как оригинальный метод reverse – она меняет порядок элементов на обратный
+	в том массиве, который был ей передан в качестве аргумента. Не используйте стандартный
+	метод reverse.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reversArray</title>
+	<script type="text/javascript">
+
+	function reversArray(array) {
+		var revers = [];
+		for (var i = 0; i < array.length; i++)
+			revers.unshift(array[i]);
+		return revers;
+	}
+
+	function reverseArrayInPlace(array){
+		var length = array.length;
+		for(var i =0; i < length; i++){
+			array.unshift(1);
+		}
+		for(var j = 0; j < length; j++){
+			array[j] = array.pop();
+		}
+		return array;
+	}
+
+		document.write(reversArray(["A", "B", "C"]));
+		document.write("<br />");
+		document.write(reverseArrayInPlace(["A", "B", "C", "D"]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+   Напишите программу, создающую строку, содержащую решётку 8х8, в которой линии
+   разделяются символами новой строки. На каждой позиции либо пробел, либо #.
+   В результате должна получиться шахматная	доска. Размер доски сделать переменным.
+
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Chess Desk</title>
+    <script type="text/javascript">
+        var width = 8;
+        var height = 8;
+
+        for (var i = 1; i <= height; i++) {
+            for (var j = 1; j <= width; j++) {
+
+                var even = !(i % 2) && !(j % 2);
+                var odd = (i % 2) && (j % 2);
+
+                if (even || odd) {
+                    document.write("#");
+                } else {
+                    document.write("*");
+                }
+            }
+            document.write("<br / >");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

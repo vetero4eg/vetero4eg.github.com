@@ -1,0 +1,39 @@
+<!--
+   Создать 3 переменные x=6, y=15, z=4.
+   Выполнить операции и вывести результат:
+   x+=y-x++*z;
+   z=--x-y*5;
+   y/=x+5%z;
+   z=x++ +y*5;
+   x=y-x++*z;
+   -->
+
+   <html>
+    <head>
+        <title>Math</title>
+
+        <script type="text/javascript">
+            var x=6, y=15, z=4;
+
+            var result = x+=y- x++ *z;
+
+            document.write("<p> Исходные данные: x=6, y=15, z=4. </p>");
+            document.write("<hr />");
+            document.write("<p> Выражение x+=y-x++*z равняется: " + result + "</p>");
+
+            result= z = --x -y*5;
+            document.write("<p> Выражение z=--x-y*5 равняется: " + result + "</p>");
+
+            result= y/=x+5%z;
+            document.write("<p> Выражение y/=x+5%z равняется: " + result + "</p>");
+
+            result= z=x++ +y*5;
+            document.write("<p> Выражение z=x++ +y*5 равняется: " + result + "</p>");
+
+            result= x=y-x++ *z;
+            document.write("<p> Выражение x=y-x++*z равняется: " + result + "</p>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
