@@ -1,0 +1,143 @@
+<!--
+	При решении задачи я предполагаю, что данные однотипны, но строки могут составляться из символов как в латинице, так и в кирилице. Сепаратор состоит из одного символа, удобного для конкретной ситуации, в нашем случае "_". При расшифровке может возникнуть ситуация, что неправильный ключ совпадет по сумме символов в Юникоде при другом наборе символов. Если передаваемые данные однотипны, логично было бы создать "словарь" и проводить более глубокое шифрование, которое в итоге давало бы строку меньшей длины. Но для данной задачи это посчитала избыточным и очстановилась на более простом и универсальном для большинства случаев решении.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Задача 2 JS</title>
+		<script type="text/javascript">
+
+			var items = ['red/apple/candy/jujube/red','green/apple/candy','red/garnet/juice','green/grapes/candy',
+						 'orange/orange/coctail/alcohol','green/apple/jujube/green','green/grapes/ice cream',
+						 'red/apple/candy','orange/orange/juice','orange/orange/pie','red/strawberry/candy',
+						 'red/strawberry/pie','orange/orange/coctail/non alcohol','red/apple/puree','green/grapes/juice',
+						 'green/grass/silo','red/strawberry/juice','red/apple/candy/jujube/green','red/garnet/candy/red',
+						 'red/grapes/ice cream','red/garnet/candy/jujube','red/apple/candy/jujube/blue',
+						 'green/apple/jujube/green','red/strawberry/ice cream','red/apple/ice cream','red/garnet/pie',
+						 'green/grass/hay','green/lime/coctail/non alcohol','red/grapes/juice','green/lime/coctail/alcohol',
+						 'green/lime/tea','green/apple/puree','green/lime/mousse','red/apple/candy/sweet',
+						 'green/apple/sweet','red/grapes/candy'];
+
+			// Задаем текстовый ключ
+			var textkey = "vt4";
+
+			// И разделитель для упаковки строки
+			var separator = "_";
+
+
+			//Упаковываем массив в зашифрованную строку
+
+			function pack(array, textkey){
+				var list = arrayToList(array, textkey);
+				var stroke = listToString(list, textkey);
+				return shifrator(stroke, textkey);
+			}
+
+			var packItems = pack(items, textkey);
+			var unpackItems = deshifrator(packItems, "vt4");
+			var wrongUnpack = deshifrator(packItems, "vt");
+			document.write("Результаты работы программы также можно посмотреть в консоли <hr />")
+			document.write("Зашифрованная строка: <br />" + packItems + "<hr />");
+			document.write("Расшифрованная строка: <br />" + unpackItems + "<hr />");
+			document.write("Попытка расшифровать строку с другим ключом: <br />" + wrongUnpack + "<hr />");
+
+			// Зашиваем данные в список с ключом
+			function arrayToList(array, textkey) {
+				var list = null;
+				var iteration = array.length -1;
+				for(var i = iteration; i >= 0; i--){
+					list = {value: array[i], rest: list};
+				}
+				Object.defineProperty(list, 'textkey', {value: textkey});
+				return list;
+			}
+
+			// Функция для создания строки из списка
+			function listToString(list, textkey) {
+				var str = "";
+				if (textkey != list.textkey){
+					 return "Неверный ключ";
+				} else {
+					for(var node = list; node; node = node.rest)
+						str += node.value + separator;
+					return str;
+				}
+			}
+
+			// Функция для кодирования текстового ключа
+			function toCode(str) {
+				var sum = 0;
+				var iteration = str.length;
+				for(var i = 0; i < iteration; i++){
+					sum += str.charCodeAt(i);
+				}
+				return sum;
+			}
+
+			//Функция-шифратор
+			function shifrator(string, textkey) {
+				var str = "";
+				var salt = toCode(textkey);
+				var iteration = string.length;
+				for(var i = 0; i < iteration; i++){
+					str += String.fromCharCode(string.charCodeAt(i) + salt);
+				}
+				return str;
+			}
+
+			//Функция-дешифратор
+			function deshifrator(string, textkey) {
+				var str = "";
+				var salt = toCode(textkey);
+				var iteration = string.length;
+				for(var i = 0; i < iteration; i++){
+					str += String.fromCharCode(string.charCodeAt(i) - salt);
+				}
+				return str;
+			}
+
+			var list = arrayToList(items, textkey);
+			console.log("Созданный объект-список: ");
+			console.log(list);
+			var shifr = shifrator(listToString(list, textkey), textkey);
+			console.log("Полученная зашифрованная строка: " + shifr);
+			var stroke = deshifrator(shifr, textkey);
+			console.log("Расшифрованная строка: " + stroke);
+			console.log("Попытка расшифровать строку с другим ключом: " + deshifrator(shifr, "vt"));
+
+/*
+	Эти функции можно использовать при изменении порядка упаковки и шифрования, например для того,
+	чтобы получить массив с зашифрованными частями строки и удобного вывода его на экран при тестировании.
+
+			// Распаковка строки в массив
+			function unpackStringInArray(string) {
+				var arr = [];
+				var iteration = string.length;
+				var item = "";
+				for(var i = 0; i < iteration; i++){
+					if(string.charAt(i) != separator) {
+						item += string.charAt(i);
+					} else {
+						arr.push(item);
+						item = "";
+					}
+				}
+				return arr;
+			}
+
+			// Оформляем вывод массива в тело документа
+			function testArr(array) {
+				var iteration = array.length;
+				for( var i = 0; i < iteration; i++)
+					document.write(i + "-й элемент массива: " + array[i] + "<br />");
+			}
+*/
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

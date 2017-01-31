@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задача 1 JS</title>
+	<script type="text/javascript">
+
+		var items = ['red/apple/candy/jujube/red','green/apple/candy','red/garnet/juice','green/grapes/candy',
+					 'orange/orange/coctail/alcohol','green/apple/jujube/green','green/grapes/ice cream',
+					 'red/apple/candy','orange/orange/juice','orange/orange/pie','red/strawberry/candy',
+					 'red/strawberry/pie','orange/orange/coctail/non alcohol','red/apple/puree','green/grapes/juice',
+					 'green/grass/silo','red/strawberry/juice','red/apple/candy/jujube/green','red/garnet/candy/red',
+					 'red/grapes/ice cream','red/garnet/candy/jujube','red/apple/candy/jujube/blue',
+					 'green/apple/jujube/green','red/strawberry/ice cream','red/apple/ice cream','red/garnet/pie',
+					 'green/grass/hay','green/lime/coctail/non alcohol','red/grapes/juice','green/lime/coctail/alcohol',
+					 'green/lime/tea','green/apple/puree','green/lime/mousse','red/apple/candy/sweet',
+					 'green/apple/sweet','red/grapes/candy'];
+
+		//Если правильно поняла задачу, нужно реализовать алгоритмы array.join() и string.split().
+
+		var separator = "_";
+
+		// Упаковываем массив в строку с разделителем separator
+
+		function packArrayInString(array) {
+			var str = "";
+			var iteration = array.length;
+			for(var i = 0; i < iteration; i++)
+				str += array[i] + separator;
+			return str;
+		}
+
+		// Распаковываем обратно в массив, с учетом того же разделителя
+
+		function unpackStringInArray(string) {
+			var arr = [];
+			var iteration = string.length;
+			var item = "";
+			for(var i = 0; i < iteration; i++){
+				if(string.charAt(i) != separator) {
+					item += string.charAt(i);
+				} else {
+					arr.push(item);
+					item = "";
+				}
+			}
+			return arr;
+		}
+
+		// Оформляем вывод массива в тело документа
+
+		function testArr(array) {
+			var iteration = array.length;
+			for( var i = 0; i < iteration; i++)
+				document.write(i + "-й элемент массива: " + array[i] + "<br />");
+		}
+
+		var str = packArrayInString(items);
+		var arr = unpackStringInArray(str);
+		document.write("<hr />" + "Исходный массив: " + "<hr />");
+		testArr(items);
+		document.write("<hr />" + "Строка: " + "<hr />");
+		document.write(str);
+		document.write("<hr />" + "Массив после распаковки строки:" + "<hr /");
+		testArr(arr);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

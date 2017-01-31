@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bind</title>
+	<script type="text/javascript">
+
+		// Реализация Function.prototype.bind своими руками
+		Function.prototype.ourBind = function(thisArg) {
+			if (typeof this !== "function") {
+				throw new TypeError ("Попытка связать ourBind с тем, что не является функцией");
+			}
+			var func = this,
+				slice = Array.prototype.slice,
+				args = slice.call(arguments, 1);
+			return function () {
+				return func.apply(thisArg, args.concat(slice.call(arguments)));
+			};
+		};
+
+		//Тестирование
+
+document.write("Ранее мне не приходилось писать тест-кейсы, и никаких требований к оформлению тестов предоставлено не было.<br /> Сверка результатов не пройдет успешно в IE8, ввиду того, что метод Function.prototype.bind работает только в браузерах, которые поддерживают стандарт ES5. <br /> Представляется целесообразным провести сверку следующим образом: <br />");
+
+document.write("<br />Test-1. Проверяем работу метода на примере простой функции умножения двух чисел.");
+
+var multiply = function(m, n) {
+	return m * n;
+};
+		console.log("Test-1");
+		var double = multiply.bind(null, 2);
+		var ourDouble = multiply.ourBind(null, 2);
+		var test1 = double(3) === ourDouble(3);
+
+		console.log(double(3));  //6
+		console.log(ourDouble(3)); //6
+		console.log(test1);
+
+document.write("<br />" + test1);
+
+document.write("<br /> Test-2. При этом, как и оригинальный метод bind, ourBind не меняет исходную функцию multiply. Результат в консоли");
+
+		console.log("Test-2");
+		console.log(multiply(3)); //Nan
+		console.log(multiply); // function (m, n) {return m*n};
+
+document.write("<br />Test-3. Метод позволяет создавать функции с предопределенными аргументами.");
+
+var displayValue = function(a, b, c, d, e){
+	document.write("<br />" + a + b + c + d + e);
+};
+		var display1 = displayValue.bind(null, 2, "a");
+		var display2 = displayValue.ourBind(null, 2, "a");
+		display1("b", "c", "d"); // 2abcd
+		display2("b", "c", "d"); // 2abcd
+
+document.write("<br />Test-4. Возможность явно привязать this к функции обратного вызова для функций типа setTimeout()");
+
+		var person1 = {
+			name: "User1",
+			hello: function() {
+				alert("Test-4. " + this.name + ", hello!");
+			}
+		};
+		var person2 = {
+			name: "User2",
+			hello: function() {
+				alert("Test-4. " + this.name + ", hello!");
+			}
+		};
+		var hello1 = person1.hello.bind(person1, person1.name);
+		var hello2 = person2.hello.ourBind(person2, person2.name);
+		setTimeout(hello1, 3000); // User1, hello!
+		setTimeout(hello2, 3000); // User2, hello!
+
+document.write("<br />Test-5. В отличие от оригинального метода bind, функции созданные при помощи ourBind имеют свойство prototype.")
+		console.log("Test-5");
+		console.log(display1.prototype); // undefined
+		console.log(display2.prototype); // Object {}
+
+document.write("<br />Test-6. Свойство length функции, полученной при помощи ourBind всегда будет равно 0.");
+		console.log("Test-6");
+		console.log(display1.length); // 3
+		console.log(display2.length); // 0
+
+document.write("<br />Test-7. Существует возможность получить доступ к неизменяемым свойствам привязанной посредством ourBind функции caller и arguments")
+		console.log("Test-7");
+		//console.log(display1.arguments); // TypeError. (Получить, установить или удалить свойство невозможно.)
+		console.log(display2.arguments); // null
+		//console.log(display1.caller); // TypeError. (Получить, установить или удалить свойство невозможно.)
+		console.log(display2.caller); // null
+
+
+document.write("<br />Test-8. При попытке связать метод не с функцией, возникает исключение TypeError.");
+		var arr = [1, 2, 3];
+		console.log("Test-8");
+		arr.ourBind("Context"); //TypeError
+		//arr.bind("Context"); //TypeError
+	</script>
+</head>
+<body>
+
+</body>
+</html>

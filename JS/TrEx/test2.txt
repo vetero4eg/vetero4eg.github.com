@@ -1,0 +1,25 @@
+﻿Задача 1.  Есть набор строк: 
+
+var items = ['red/apple/candy/jujube/red','green/apple/candy','red/garnet/juice','green/grapes/candy','orange/orange/coctail/alcohol','green/apple/jujube/green','green/grapes/ice cream','red/apple/candy','orange/orange/juice','orange/orange/pie','red/strawberry/candy','red/strawberry/pie','orange/orange/coctail/non alcohol','red/apple/puree','green/grapes/juice','green/grass/silo','red/strawberry/juice','red/apple/candy/jujube/green','red/garnet/candy/red','red/grapes/ice cream','red/garnet/candy/jujube','red/apple/candy/jujube/blue','green/apple/jujube/green','red/strawberry/ice cream','red/apple/ice cream','red/garnet/pie','green/grass/hay','green/lime/coctail/non alcohol','red/grapes/juice','green/lime/coctail/alcohol','green/lime/tea','green/apple/puree','green/lime/mousse','red/apple/candy/sweet','green/apple/sweet','red/grapes/candy']; 
+
+Необходимо: 
+   1. Упаковать этот массив в одну строку для дальнейшей распаковки. 
+   2. Из полученной строки - собрать обратно в той же последовательности что была представлена изначально. 
+Задачу необходимо реализовать на php и javascript. 
+Условия: 
+   1. Алгоритм упаковки и распаковки писать самим (именно это является предметом проверки в задании), никакие сторонние библиотеки не использовать 
+   2. Выводить в консоль или в html (как - нибудь наглядно) зашифрованную строку (как она выглядит в зашифрованном виде) и результат расшифровки 
+   3. Код должен работать в IE>=8 
+   4. Код JavaScript требуется оформить в виде html со встроенным JavaScript и готовым для проверки путём запуска страницы в браузере 
+   5. Код php так же требуется офомить в готовом рабочем виде, что бы при обращении были видны зашифрованная строка и расшифрованная. 
+   6. Отобразить нужно все этапы преобразования строки, если она шифруется, то вывести её до шифрования. Цель: необходимо оценить размер строки перед шифровкой символов. 
+
+
+Задача 2.  Усложнить механизм упаковки массива строк таким образом, что бы его нельзя было раскрыть без использования текстового ключа, 
+вид текстового ключа - на вкус разработчика. Оцениваться будет сложность упаковки строки и размер конечной упакованной строки, чем она меньше - тем лучше. 
+Приветствуется использование Object.prototype.defineProperty в работе упаковщика и распаковщика. 
+Задачу необходимо реализовать на php и javascript. 
+
+
+Задача 3.  Написать метод Function.prototype.bind своими руками, написать тест кейс сверки результатов его использования и оригинального .bind 
+
