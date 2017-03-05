@@ -4795,8 +4795,9 @@ button {
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
-.g-btn:hover {
-  box-shadow: 0 0 3px 5px #ff5912;
+
+input.g-btn:hover {
+  box-shadow: 0 0 1px 3px #ff5912;
 }
 .product-item {
   position: relative;
@@ -5684,8 +5685,7 @@ footer .container {
     position: static;
     margin-bottom: 20px;
   }
-  .best-sales__info,
-  :before {
+  .best-sales__info:before {
     display: none;
   }
 }
