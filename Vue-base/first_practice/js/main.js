@@ -1,7 +1,7 @@
 new Vue({
-    el: "#app",
+    el: '#app',
     data: {
-        message : "Hello Vue",
+        message : 'Hello Vue',
         items: [
             {
                 name: 'one',
@@ -23,6 +23,11 @@ new Vue({
                 name: 'five',
                 status: false
             }
-        ]
+        ],
+    },
+    methods: {
+        onClick: function() {
+            alert(this.message);
+        }
     }
 })

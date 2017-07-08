@@ -20,6 +20,11 @@
             </ul>
         </div>
 
+        <div class="three__lesson lesson">
+            <button @click="onClick">Click me</button>
+            <input type="text" v-model="message" @keyup.enter="onClick">
+        </div>
+
     </div>
 
     <script src="https://unpkg.com/vue"></script>
