@@ -1,0 +1,34 @@
+.lesson {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.first__lesson {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two__lesson ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    list-style-type: none;
+    text-align: center;
+    background: azure;
+}
+
+.two__lesson ul li {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.two__lesson li.strike {
+    color: grey;
+    text-decoration: line-through;
+}
