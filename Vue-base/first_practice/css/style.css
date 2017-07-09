@@ -38,6 +38,30 @@
     align-items: center;
 }
 
-.three__lesson button {
+.three__lesson button,
+.four__lesson button {
     margin: 15px auto;
+}
+
+.four__lesson {
+    flex-direction: column;
+    align-items: center;
+}
+
+.four__lesson .box{
+    width: 150px;
+    height: 150px;
+    background: forestgreen;
+}
+
+
+.boo-enter-active,
+.boo-leave-active {
+    transition: all 1s ease-in-out;
+}
+
+.boo-enter,
+.boo-leave-active {
+    transform: scale(.2, .2) rotate(360deg) translateY(-100%);
+    opacity: 0;
 }
