@@ -24,6 +24,7 @@ new Vue({
                 status: false
             }
         ],
+        show: false
     },
     methods: {
         onClick: function() {
