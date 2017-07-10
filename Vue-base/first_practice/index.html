@@ -16,7 +16,7 @@
 
         <div class="two__lesson lesson">
             <ul>
-                <li v-for="item in items" :class="{ 'strike' : item.status }"> {{ item.name }}</li>
+                <li v-for="item in items" :class="{ 'strike' : item.status }" @click="item.status = !item.status"> {{ item.name }}</li>
             </ul>
         </div>
 
@@ -30,6 +30,18 @@
             <transition name="boo">
                 <div class="box" v-show="show"></div>
             </transition>
+        </div>
+
+        <div class="five__lesson lesson">
+
+            <form action="">
+                <span> {{ count }} / {{ limit }} </span>
+
+                <textarea name="name" rows="3" cols="80" v-model="text"></textarea>
+
+                <button :disabled="disabled">Отправить</button>
+            </form>
+
         </div>
 
     </div>
