@@ -836,6 +836,34 @@ button,
 .special__offer-img
 {
     position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.special__offer-img:hover,
+.special__offer-img:focus
+{
+    opacity: .9;
+}
+.special__offer-img img
+{
+    width: 100%;
+    height: auto;
+
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+
+    background-size: cover;
+}
+.special__offer-img img:hover,
+.special__offer-img img:active
+{
+    -webkit-transform: scale(1.05, 1.05);
+        -ms-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
 }
 .special__offer-img--info
 {
