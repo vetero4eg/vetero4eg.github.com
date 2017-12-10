@@ -1,0 +1,102 @@
+extends ../layout/main
+
+block title
+	| Imperial Age | Official Homepage
+	
+block content
+	.container
+		main.main__section
+			.main__banner
+				img(src="images/group.jpg" alt="Imperial Age Group")
+			nav.top__menu
+				ul.top__menu-left
+					li
+						a(href="#") News
+					li.parent__item
+						a(href="#") Tour
+						ul.child__items
+							li
+								a(href="#") Upcoming shows
+							li
+								a(href="#") Past shows
+					li.parent__item
+						a(href="#") Band
+						ul.child__items
+							li
+								a(href="#") Biography
+							li
+								a(href="#") Members
+							li
+								a(href="#") Discography
+				.logo
+					a(href="#") 
+						img(src="i/logo.png" alt="logo Imperial Age Group")
+				ul.top__menu-right
+					li.parent__item
+						a(href="#") Media
+						ul.child__items
+							li
+								a(href="#") Videos
+							li
+								a(href="#") Pictures
+							li
+								a(href="#") Press
+					li.parent__item
+						a(href="#") Shop
+						ul.child__items
+							li
+								a(href="#") Music
+							li
+								a(href="#") Merch
+					li
+						a(href="#") Contact
+			section.info 
+				.info__news.info__item
+					h1.info__item-title News
+					a(href="#").info__item-event.event
+						h2.event__title IMPERIAL AGE BECOME A STEINBERG ENDORSER
+						h3.event__date April 04, 2017
+					a(href="#").info__item-event.event
+						h2.event__title lineup changes
+						h3.event__date January 14, 2017
+					a(href="#").info__item-event.event
+						h2.event__title live video from Paris
+						h3.event__date December 12, 2016
+					a(href="#").info__item-event.event
+						h2.event__title video interview with aor and corn
+						h3.event__date December 09, 2016
+					a(href="#").info__item-event.event
+						h2.event__title eurpean tour successfully completed!
+						h3.event__date December 02, 2016
+					a(href="#").main__btn-small previous news
+				.info__shop.info__item
+					img(src="images/promo.png" alt="promo merch and music")
+					a(href="#").main__btn music & merch
+				.info__tour.info__item
+					h1.info__item-title Tour
+					a(href="#").info__item-event.event
+						h2.event__title ESSEN, GERMANY
+						p.event__place Turock
+						h3.event__date February 01, 2018
+					a(href="#").info__item-event.event
+						h2.event__title amsterdam, netherlands
+						p.event__place Melkweg
+						h3.event__date February 02, 2018
+					a(href="#").info__item-event.event
+						h2.event__title antwerpen, belgium
+						p.event__place TBC
+						h3.event__date February 03, 2018
+					a(href="#").info__item-event.event
+						h2.event__title manchester, uk
+						p.event__place Rebellion
+						h3.event__date February 04, 2018
+					a(href="#").main__btn-small more dates
+			section.video 
+				.info__video.info__item
+					h1.info__item-title featured video
+					iframe(src="https://www.youtube-nocookie.com/embed/fni2jQZzitU?showinfo=0" frameborder="0" allowfullscreen) 
+					a(href="#").main__btn-small watch more
+			section.insta 
+				.info__insta.info__item
+					h1.info__item-title instagram
+					a(href="#").main__btn-small follow us
