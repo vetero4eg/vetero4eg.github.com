@@ -1,0 +1,33 @@
+/* LatoRegular */
+@font-face {
+	font-family: 'LatoRegular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('LatoRegular'),
+		url('LatoRegular/LatoRegular.woff2') format('woff2'),
+		url('LatoRegular/LatoRegular.woff') format('woff'),
+		url('LatoRegular/LatoRegular.ttf') format('ttf'),
+		url('LatoRegular/LatoRegular.eot')format('eot');
+}
+/* LatoBold */
+@font-face {
+	font-family: 'LatoBold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('LatoBold'),
+		url('LatoBold/LatoBold.woff2') format('woff2'),
+		url('LatoBold/LatoBold.woff') format('woff'),
+		url('LatoBold/LatoBold.ttf') format('ttf'),
+		url('LatoBold/LatoBold.eot')format('eot');
+}
+/* RobotoRegular */
+@font-face {
+	font-family: 'RobotoRegular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('RobotoRegular'),
+		url('RobotoRegular/RobotoRegular.woff2') format('woff2'),
+		url('RobotoRegular/RobotoRegular.woff') format('woff'),
+		url('RobotoRegular/RobotoRegular.ttf') format('ttf'),
+		url('RobotoRegular/RobotoRegular.eot')format('eot');
+}
