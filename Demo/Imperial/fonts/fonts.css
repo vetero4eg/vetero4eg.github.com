@@ -1,0 +1,33 @@
+/* font-family: "Trajan-Regular" */
+@font-face {
+	font-family: 'Trajan-Regular';
+	src: local('Trajan Pro 3'),
+		url('Trajan-Regular/Trajan-Regular.woff2') format('woff2'),
+		url('Trajan-Regular/Trajan-Regular.woff') format('woff'),
+		url('Trajan-Regular/Trajan-Regular.ttf') format('ttf'),
+		url('Trajan-Regular/Trajan-Regular.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Trajan-Bold" */
+@font-face {
+	font-family: 'Trajan-Bold';
+	src: local('Trajan Pro 3 Bold'),
+		url('Trajan-Bold/Trajan-Bold.woff2') format('woff2'),
+		url('Trajan-Bold/Trajan-Bold.woff') format('woff'),
+		url('Trajan-Bold/Trajan-Bold.ttf') format('ttf'),
+		url('Trajan-Bold/Trajan-Bold.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "TimesNewRoman" */
+@font-face {
+	font-family: 'TimesNewRoman';
+	src: local('Times New Roman'),
+		url('TimesNewRoman/TimesNewRoman.woff2') format('woff2'),
+		url('TimesNewRoman/TimesNewRoman.woff') format('woff'),
+		url('TimesNewRoman/TimesNewRoman.ttf') format('ttf'),
+		url('TimesNewRoman/TimesNewRoman.eot') format('eot');
+	font-style: normal;
+	font-weight: normal;
+}
