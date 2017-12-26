@@ -537,15 +537,79 @@ section {
   display: flex
 }
 
-.content, .header__container {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap
+.content,
+.header__container,
+.footer__container
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
+@media only screen and (max-width: 1200px)
+{
+    .content,
+    .header__container,
+    .footer__container
+    {
+        max-width: 1024px;
+    }
+}
+@media only screen and (max-width: 1024px)
+{
+    .content,
+    .header__container,
+    .footer__container
+    {
+        max-width: 970px;
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    .content,
+    .header__container,
+    .footer__container
+    {
+        max-width: 750px;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .content,
+    .header__container,
+    .footer__container
+    {
+        max-width: 550px;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .content,
+    .header__container,
+    .footer__container
+    {
+        max-width: 450px;
+    }
+}
+@media only screen and (max-width: 375px)
+{
+    .content,
+    .header__container,
+    .footer__container
+    {
+        max-width: 300px;
+    }
+}
+
 
 .cardlist {
   width: 100%;
