@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 });
 
-ajax_get('/data/content.json',
+ajax_get('./data/content.json',
   function(data) {
     var list = data,
         count = data.length;
