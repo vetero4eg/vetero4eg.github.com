@@ -76,7 +76,7 @@ ajax_get('./data/content.json',
           votes = data[i]['votes'],
           cost = data[i]['cost'],
           href = data[i]['href'],
-          path = '/img/';
+          path = 'img/';
 
     var item = '<a class="cardItem" href="' + href +'" target="_blank"><div class="cardItem__topline"><img class="cardItem__iconLeft" src="' + path + iconLeft + '" alt=""/><img class="cardItem__iconRight" src="' + path + iconRight + '" alt=""/></div><img class="cardItem__img" src="' + path + img + '" alt=""/><div class="cardItem__label-wrap"><img class="cardItem__iconLabel" src="' + path + iconLabel + '" alt=""/><p class="cardItem__label">' + label +'</p></div><h2 class="cardItem__title">' + title + '</h2><div class="cardItem__middleline"><p class="cardItem__username">' + userName + '</p><div class="cardItem__rate"><i class="fa fa-star" aria-hidden="true"></i><span class="cardItem__num">' + rate + '</span><span class="cardItem__votes">('+ votes + ')</span></div></div><div class="cardItem__bottomline"><i class="fa fa-heart" aria-hidden="true"></i><p class="cardItem__cost">' + cost +'</p></div></a>';
 
