@@ -59,11 +59,7 @@ $(document).ready(function() {
 
 });
 
-<<<<<<< HEAD
 ajax_get('./data/content.json',
-=======
-ajax_get('http://vetero4eg.github.io/Demo/Miratest/data/content.json',
->>>>>>> 9ba93602642003bbd129cdda31f714a69ad89052
   function(data) {
     var list = data,
         count = data.length;
