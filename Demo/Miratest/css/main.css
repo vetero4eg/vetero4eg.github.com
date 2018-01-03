@@ -38,9 +38,6 @@ html {
   height: 100%
 }
 
-.mfp-figure figure, body {
-  margin: 0
-}
 
 .slick-slide img, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block
@@ -549,12 +546,20 @@ section {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
+<<<<<<< HEAD
             flex-direction: column;
+=======
+            flex-direction: column; 
+>>>>>>> 9ae34a27e1589971937ab1fe64aef9d3c7a63b25
 
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ae34a27e1589971937ab1fe64aef9d3c7a63b25
 @media only screen and (max-width: 1200px)
 {
     .content,

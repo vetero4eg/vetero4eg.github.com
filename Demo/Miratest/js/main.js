@@ -1,5 +1,15 @@
 $(document).ready(function() {
-  //alert('Задача решалась исходя из того, что данные карточек мы получаем неким json массивом, и что вся информация в каждой карточке может быть различной. Для простоты реализации тестовой задачи, но сохранения некой наглядности используется 2 различных набора контента для карточки. Также показалось логичным добавить подгрузку в список карточек по 5 штук по нажатию кнопки "ещё". Задача решена в рамках тех условий, в которых мне обычно приходилось работать. Исходника psd не предоставлялось, поэтому внешний вид карточки повторяется условно, преимущественно по структуре. Так как не указывалось, что должно происходить по клику на карточку, реализован переход по указанной в json ссылке.')
+  
+  /*Задача решалась исходя из того, что данные карточек мы получаем неким json массивом,
+  и что вся информация в каждой карточке может быть различной. Для простоты реализации тестовой задачи,
+  но сохранения некой наглядности используется 2 различных набора контента для карточки. 
+  
+  Также показалось логичным добавить подгрузку в список карточек по 5 штук по нажатию кнопки "ещё". 
+  
+  Задача решена в рамках тех условий, в которых мне обычно приходилось работать. 
+  Исходника psd не предоставлялось, поэтому внешний вид карточки повторяется условно, 
+  преимущественно по структуре. Так как не указывалось, что должно происходить по клику на карточку,
+  реализован переход по указанной в json ссылке.')*/
 
   $('.cardItem__title').textTailor({
     fit: false
@@ -76,7 +86,7 @@ ajax_get('./data/content.json',
           votes = data[i]['votes'],
           cost = data[i]['cost'],
           href = data[i]['href'],
-          path = '/img/';
+          path = 'img/';
 
     var item = '<a class="cardItem" href="' + href +'" target="_blank"><div class="cardItem__topline"><img class="cardItem__iconLeft" src="' + path + iconLeft + '" alt=""/><img class="cardItem__iconRight" src="' + path + iconRight + '" alt=""/></div><img class="cardItem__img" src="' + path + img + '" alt=""/><div class="cardItem__label-wrap"><img class="cardItem__iconLabel" src="' + path + iconLabel + '" alt=""/><p class="cardItem__label">' + label +'</p></div><h2 class="cardItem__title">' + title + '</h2><div class="cardItem__middleline"><p class="cardItem__username">' + userName + '</p><div class="cardItem__rate"><i class="fa fa-star" aria-hidden="true"></i><span class="cardItem__num">' + rate + '</span><span class="cardItem__votes">('+ votes + ')</span></div></div><div class="cardItem__bottomline"><i class="fa fa-heart" aria-hidden="true"></i><p class="cardItem__cost">' + cost +'</p></div></a>';
 
