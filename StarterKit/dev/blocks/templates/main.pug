@@ -1,0 +1,21 @@
+include ../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include ../_base/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		include ../head/main__head
+
+	body(class=pageClass)
+		.wrapper
+			include ../header/header
+			.content
+				block content
+		include ../footer/footer
+		include ../_base/old__brow
+		script(src="js/libs.min.js")
+		script(src="js/main.js")
+		block script

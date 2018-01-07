@@ -1,0 +1,84 @@
+// Шрифты
+@import "_base/fonts.sass"
+// Стили библиотек
+@import "_base/libs.sass"
+// Миксины
+@import "_base/mixin.sass"
+// Переменные
+@import "_base/var.sass"
+// Шрифты
+@import "_base/fonts.sass"
+
+// Общие стили проекта
+html
+  line-height: 1.2
+  font-size: $mainFontSize
+  height: 100%
+
+body
+  position: relative
+  display: flex
+  min-height: 100%
+  flex-direction: column
+  align-items: stretch
+  justify-content: space-between
+  font-family: $mainFont
+  background: $mainBgColor
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+p
+  margin: 0
+  color: $mainFontColor
+
+a
+  text-decoration: none
+  color: $hrefColor
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align: middle
+
+textarea
+	resize: none
+
+input,
+select,
+button
+	outline: none
+
+*, *:before, *:after
+	box-sizing: border-box
+
+.hide
+	display: none
+
+.show
+	display: block
+
+::-moz-selection
+	background: #b3d4fc
+	text-shadow: none
+
+::selection
+	background: #b3d4fc
+	text-shadow: none
+
+section
+	position: relative
+
+.wrapper
+	flex: 1 0 auto
+	min-height: 100%
+	background: transparent
+
+// Cтили страниц и блоков
+@import "header/header.sass"
+
+
+@import "footer/footer.sass"

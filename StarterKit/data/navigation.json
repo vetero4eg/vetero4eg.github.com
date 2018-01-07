@@ -1,0 +1,24 @@
+{
+  "headerNav": [
+            {
+              "text": "Начало",
+              "href": "index.html"
+            },
+            {
+              "text": "Программа тура",
+              "href": "index.html#program"
+            },
+            {
+              "text": "Стоимость",
+              "href": "index.html#cost"
+            },
+            {
+              "text": "Фотографии",
+              "href": "index.html#photo"
+            },
+            {
+              "text": "Заказать",
+              "href": "index.html#buy"
+            }
+          ]
+}
