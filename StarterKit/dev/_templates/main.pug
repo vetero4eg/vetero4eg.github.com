@@ -7,14 +7,14 @@ block variables
 doctype html
 html(lang="ru-RU")
 	head
-		include ../head/main__head
+		include ../blocks/head/main__head
 
 	body(class=pageClass)
 		.wrapper
-			include ../header/header
+			include ../blocks/header/header
 			.content
 				block content
-		include ../footer/footer
+		include ../blocks/footer/footer
 		include ../_base/old__brow
 		script(src="js/libs.min.js")
 		script(src="js/main.js")
