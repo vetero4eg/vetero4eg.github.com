@@ -6,8 +6,14 @@ global.$ = {
     del: require('del'),
     fs: require('fs'),
     browserSync: require('browser-sync').create(),
-    gp: require('gulp-load-plugins')()
+    gp: require('gulp-load-plugins')({
+      rename: {
+        'gulp-sass-bulk-import': 'bulkSass'
+      }
+    })
 };
+
+
 
 $.path.task.forEach(function(taskPath) {
     require(taskPath)();

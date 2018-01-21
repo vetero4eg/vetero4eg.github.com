@@ -1,6 +1,7 @@
 module.exports = function () {
     $.gulp.task('styles:build', () => {
-        return $.gulp.src('./dev/blocks/main.sass')
+        return $.gulp.src('./dev/_base/main.sass')
+            .pipe($.gp.bulkSass())
             .pipe($.gp.sass())
             .pipe($.gp.autoprefixer({
                 browsers: ['last 5 version']
@@ -11,8 +12,9 @@ module.exports = function () {
     });
 
     $.gulp.task('styles:dev', () => {
-        return $.gulp.src('./dev/blocks/main.sass')
+        return $.gulp.src('./dev/_base/main.sass')
             .pipe($.gp.sourcemaps.init())
+            .pipe($.gp.bulkSass())
             .pipe($.gp.sass())
             .on('error', $.gp.notify.onError(function (error) {
                 return {

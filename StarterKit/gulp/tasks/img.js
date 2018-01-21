@@ -2,7 +2,7 @@ module.exports = function() {
 
     $.gulp.task('img', () => {
         return $.gulp.src('./dev/img/**/*.{png,jpg,gif}')
-            .pipe($.gp.tinypng('__APIKey__'))
+            .pipe($.gp.tinypng('U4RTY4AqMEE1pTtnOpmD8nETPXrUmy3e'))
             .pipe($.gulp.dest('./build/img/'));
     });
 

@@ -8,6 +8,13 @@
   @media only screen and (max-width:$point)
     @content
 
+@mixin fonts($font-name, $local)
+  $path: '../fonts/' + $font-name + '/' + $font-name
+  @font-face
+    font-family: $font-name
+    src: local($local), url($path + '.woff2') format('woff2'), url($path + '.woff') format('woff'), url($path + '.ttf') format('ttf'), url($path + '.eot') format('eot')
+    font-weight: normal
+    font-style: normal
 
 %container
   width: 100%
@@ -16,15 +23,15 @@
   margin: 0 auto
   display: flex
   +bp(1200px)
-    max-width: 1170px
+    max-width: 1024px
   +bp(1024px)
-    max-width: 970px
+    max-width: 800px
   +bp(800px)
-    max-width: 750px
+    max-width: 600px
   +bp(600px)
-    max-width: 550px
+    max-width: 480px
   +bp(480px)
-    max-width: 450px
+    max-width: 375px
   +bp(375px)
     max-width: 300px
 
