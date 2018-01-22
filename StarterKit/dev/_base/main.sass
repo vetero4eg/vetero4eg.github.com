@@ -1,12 +1,11 @@
-@charset 'UTF-8'
-// Миксины
-@import "mixin.sass"
-// Переменные
-@import "var.sass"
 // Шрифты
 @import "fonts.sass"
 // Стили библиотек
 @import "libs.sass"
+// Миксины
+@import "mixin.sass"
+// Переменные
+@import "var.sass"
 
 // Общие стили проекта
 html
@@ -34,7 +33,6 @@ p
 a
   text-decoration: none
   color: $hrefColor
-  transition: all .3s ease
 
 audio,
 canvas,
@@ -52,14 +50,14 @@ select,
 button
 	outline: none
 
-fieldset
-  border: 0
-  padding: 0
-  margin: 0
-
-
 *, *:before, *:after
 	box-sizing: border-box
+
+.hide
+	display: none
+
+.show
+	display: block
 
 ::-moz-selection
 	background: #b3d4fc
@@ -76,71 +74,6 @@ section
 	flex: 1 0 auto
 	min-height: 100%
 	background: transparent
-
-input::-webkit-input-placeholder
-  color: $placeholderColor
-  font-family: $mainFont
-  +fz($placeholderFontSize)
-  +lh($placeholderLineHeight)
-
-input::-moz-placeholder
-  color: $placeholderColor
-  font-family: $mainFont
-  +fz($placeholderFontSize)
-  +lh($placeholderLineHeight)
-
-input:-moz-placeholder
-  color: $placeholderColor
-  font-family: $mainFont
-  +fz($placeholderFontSize)
-  +lh($placeholderLineHeight)
-
-input:-ms-input-placeholder
-  color: $placeholderColor
-  font-family: $mainFont
-  +fz($placeholderFontSize)
-  +lh($placeholderLineHeight)
-
-input[type="text"]:focus::-webkit-input-placeholder,
-input[type="password"]:focus::-webkit-input-placeholder,
-input[type="email"]:focus::-webkit-input-placeholder,
-input[type="search"]:focus::-webkit-input-placeholder,
-input[type="url"]:focus::-webkit-input-placeholder,
-input[type="tel"]:focus::-webkit-input-placeholder
-  opacity: 0
-  -webkit-transition: opacity 0.5s ease
-  -o-transition:	opacity 0.5s ease
-  transition:	opacity 0.5s ease
-input[type="text"]:focus::-moz-placeholder,
-input[type="password"]:focus::-moz-placeholder,
-input[type="email"]:focus::-moz-placeholder,
-input[type="search"]:focus::-moz-placeholder,
-input[type="url"]:focus::-moz-placeholder,
-input[type="tel"]:focus::-moz-placeholder
-  opacity: 0
-  -webkit-transition: opacity 0.5s ease
-  -o-transition:	opacity 0.5s ease
-  transition:	opacity 0.5s ease
-input[type="text"]:focus:-moz-placeholder,
-input[type="password"]:focus:-moz-placeholder,
-input[type="email"]:focus:-moz-placeholder,
-input[type="search"]:focus:-moz-placeholder,
-input[type="url"]:focus:-moz-placeholder,
-input[type="tel"]:focus:-moz-placeholder
-  opacity: 0
-  -webkit-transition: opacity 0.5s ease
-  -o-transition:	opacity 0.5s ease
-  transition:	opacity 0.5s ease
-input[type="text"]:focus:-ms-input-placeholder,
-input[type="password"]:focus:-ms-input-placeholder,
-input[type="email"]:focus:-ms-input-placeholder,
-input[type="search"]:focus:-ms-input-placeholder,
-input[type="url"]:focus:-ms-input-placeholder,
-input[type="tel"]:focus:-ms-input-placeholder
-  opacity: 0
-  -webkit-transition: opacity 0.5s ease
-  -o-transition:	opacity 0.5s ease
-  transition:	opacity 0.5s ease
 
 // Cтили страниц и блоков
 @import "../blocks/**/*.sass"
