@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset 'UTF-8'
 // Миксины
 @import "mixin.sass"
 // Переменные
@@ -52,6 +52,12 @@ select,
 button
 	outline: none
 
+fieldset
+  border: 0
+  padding: 0
+  margin: 0
+
+
 *, *:before, *:after
 	box-sizing: border-box
 
@@ -71,32 +77,27 @@ section
 	min-height: 100%
 	background: transparent
 
-fieldset
-  border: 0
-  padding: 0
-  margin: 0
-
 input::-webkit-input-placeholder
   color: $placeholderColor
-  font-family: $placeholderFont
+  font-family: $mainFont
   +fz($placeholderFontSize)
   +lh($placeholderLineHeight)
 
 input::-moz-placeholder
   color: $placeholderColor
-  font-family: $placeholderFont
+  font-family: $mainFont
   +fz($placeholderFontSize)
   +lh($placeholderLineHeight)
 
 input:-moz-placeholder
   color: $placeholderColor
-  font-family: $placeholderFont
+  font-family: $mainFont
   +fz($placeholderFontSize)
   +lh($placeholderLineHeight)
 
 input:-ms-input-placeholder
   color: $placeholderColor
-  font-family: $placeholderFont
+  font-family: $mainFont
   +fz($placeholderFontSize)
   +lh($placeholderLineHeight)
 
@@ -140,7 +141,6 @@ input[type="tel"]:focus:-ms-input-placeholder
   -webkit-transition: opacity 0.5s ease
   -o-transition:	opacity 0.5s ease
   transition:	opacity 0.5s ease
-
 
 // Cтили страниц и блоков
 @import "../blocks/**/*.sass"
