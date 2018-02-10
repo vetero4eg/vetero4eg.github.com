@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+#info {
+  float: right;
+}
+#citySelector {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+ul {
+  width: 20%;
+  min-width: 250px;
+  padding: 0;
+  margin: 0 20px 0 0;
+  list-style-type: none;
+}
+ul li {
+  display: block;
+  padding: 10px 15px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+ul li:hover {
+  background-color: beige;
+}
+ul li:active,
+ul li.active {
+  background-color: khaki;
+}
+button {
+  background-color: transparent;
+  padding: 5px 15px;
+  margin: 5px;
+  border: 1px solid royalBlue;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+button:active,
+button:hover,
+button:focus {
+  background-color: royalBlue;
+  color: white;
+}
+button[disabled] {
+  border: 1px solid grey;
+  color: grey;
+  pointer-events: none;
+}
