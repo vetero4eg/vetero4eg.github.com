@@ -360,6 +360,7 @@ class Controller {
 
     toggleSelect(data) {
         model.setSelected(data);
+        alert(JSON.stringify(data));
     }
     
     destroy() {
