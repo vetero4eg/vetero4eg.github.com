@@ -60,7 +60,6 @@ class Model extends EventEmitter {
 
     // Что-то с запросами вышло совсем криво у меня...
     // поэтому для хранения выбора использовала localStorage
-    // в итоге оставила два варианта
 
     setSelected(data) {
         /* data - obj вида     
@@ -189,8 +188,6 @@ class View extends EventEmitter {
         }
         document.querySelector(".saveButton").removeAttribute('disabled');
 
-        //this.emit('select', { 'id': id, 'region': region, 'city': city });
-        //return { 'id': id, 'region': region, 'city': city };
     }
 
     handleSave(place) {
