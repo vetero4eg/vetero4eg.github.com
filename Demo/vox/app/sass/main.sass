@@ -1,0 +1,294 @@
+@import "_vars.sass"
+@import "_fonts.sass"
+@import "_libs.sass"
+
+*, *:before, *:after
+	box-sizing: border-box
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+	font-size: $fontSize
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	font-family: $default-font
+	color: $mainFontColor
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+a 
+	transition: all .3s ease
+
+h1 
+	font-family: $boldFont
+	+fz(30px)
+	+lh(40px)	
+	color: #3F3330 
+
+
+//typical elements
+.btn
+	position: relative
+	display: block
+	min-height: 42px
+	padding: 0 10px
+	font-family: $semiFont
+	+fz(18px)
+	+lh(42px)
+	text-transform: uppercase
+	text-align: center
+	color: $mainFontColor
+	background-color: transparent
+	border-radius: 5px
+	border: 2px solid rgba(225, 140, 68, .8)
+	border-bottom: 4px solid rgba(225, 140, 68, .8)
+	transition: all .3s ease
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(225, 140, 68, .54)
+		z-index: -1 
+		border-radius: 3px 
+		transform: scaleX(0)
+		transform-origin: top
+		transition: transform .5s ease-in-out
+	&:hover 
+		color: white
+		text-decoration: none
+		&:before 
+			transform: scaleX(1)
+			transform-origin: bottom
+	&--blue 
+		border: 2px solid rgba(73, 145, 155, .87)
+		border-bottom: 4px solid rgba(73, 145, 155, .87)
+		&:before 
+			background-color: rgba(73, 145, 155, .54)	
+	svg 
+		display: inline-block
+		margin-right: 5px
+		+fz(18px)
+		+lh(42px)
+		color: $mainFontColor
+
+//Header style 
+.header
+	width: 100%
+	padding-top: 20px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background-color: rgba(255, 255, 255, .91)
+	z-index: 10000
+	.callback
+		width: 360px
+	.lk
+		display: block
+		padding-right: 20px
+		text-align: right
+		text-transform: uppercase
+		+fz(18px)
+		color: $mainFontColor
+		&:hover,
+		&:focus,
+		&:active 
+			text-decoration: none
+			color: $twoAccent
+	.enter 
+		width: 220px		
+	.top-line
+		margin-bottom: 20px		
+	.middle-line 
+		margin-bottom: 25px		
+	.contact-item 
+		padding: 0 30px 5px 20px
+		+ .contact-item
+			border-left: 2px solid $twoAccent	
+	&__phone
+		font-family: $accentFont
+		+fz(19px)
+		+lh(36px)
+		color: $mainFontColor
+		&:hover,
+		&:active,
+		&:focus 
+			text-decoration: none
+			color: $twoAccent
+		svg 
+			margin-right: 15px
+			+fz(22px)	
+			+lh(36px)	
+	&__city 
+		margin: 0
+		svg
+			margin-right: 22px	
+			+fz(22px)	
+			+lh(36px)		
+
+.main-menu	
+	margin-bottom: -10px
+	.nav-items 
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		list-style-type: none
+		width: 100%
+		padding: 0 15px
+	.nav-item 
+		text-transform: uppercase
+		font-family: $semiFont
+		+fz(20px)
+		+lh(24px)	
+		margin: 0 2px
+		a
+			display: inline-block
+			padding: 5px 15px
+			color: $mainFontColor	
+			border-bottom: 5px solid transparent
+			border-radius: 3px	
+			&:hover,
+			&:active,
+			&:focus
+				text-decoration: none
+				border-bottom: 5px solid $twoAccent
+		&.active 
+			a 
+				border-bottom: 5px solid $twoAccent	
+.logo
+	display: block
+	width: 249px
+	height: 154px
+	&__img 
+		width: 100%
+		height: auto
+		object-fit: contain
+
+//Hero style
+.hero
+	display: block
+	width: 100%
+	height: 100vh
+	padding-top: 235px
+	background: url(../img/main_bcg.jpg) center top no-repeat
+	background-size: contain
+	overflow: hidden
+	&__bcg 
+		position: absolute
+		right: -13%
+		top: 55%
+		width: 30%
+		height: 30%
+		.pentas
+			width: 100%
+			height: auto
+		.pent 
+			stroke-opacity: .5	
+	.video 
+		position: relative
+		width: 100%
+		margin: 5px auto
+		transform: scale(1.1, 1.1)
+	video 
+		position: absolute
+		top: 0
+		left: 0
+		width: 150%
+		clip-path: url("#mask")
+	#border 
+		width: 100%
+		height: 450px
+		position: absolute
+		top: 0
+		left: 0
+	&__title 
+		margin: 20px 0 60px 40px	
+	&__items
+		height: 250px
+		padding: 25px 0 0
+		margin-left: 120px
+		border-left: 4px solid $twoAccent
+		list-style-type: none
+	&__item 
+		position: relative
+		margin-bottom: 15px
+		padding-left: 40px
+		font-family: $semiFont
+		+fz(22px)
+		+lh(30px)
+		&:before 
+			position: absolute
+			content: ''
+			display: block
+			left: 1px
+			top: 50%
+			transform: translateY(-50%)
+			width: 18px
+			height: 4px
+			background-color: $twoAccent
+	.scrollMouse 
+		display: block
+		width: 50px
+		height: 100px
+		margin-left: 98px		
+
+//benefit style
+.benefit 
+	position: relative
+	display: block
+	width: 100%
+	padding: 50px 0 85px
+	border-bottom: 4px solid $twoAccent
+	box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3)
+	z-index: 30
+	perspective: 1200
+	perspective-origin: center
+	&__icon
+		width: 130px
+		margin: 0 auto 30px
+		height: 130px
+		transform-style: preserve-3d
+		backface-visibility: visible
+		svg 
+			width: 100%
+			height: auto
+			filter: url(#dropShadow)
+	&__descr
+		display: block
+		max-width: 280px
+		margin: 0 auto
+		text-align: center	
+		font-family: $default-font
+		+fz(22px)	
+	.btn--long 
+		margin-top: 70px	
+//workWith 
+.workWith 
+	display: block
+	width: 100%
+	height: 100vh
+	background: url(../img/workWith.jpg) top right no-repeat
+	background-size: 60% auto
+
+
+
+@import "media" // Always at the end
