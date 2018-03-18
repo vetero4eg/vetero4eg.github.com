@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 120">
+  <path d="M-1 9.8v93.7M35.3 9.8v93.7M71 9.8v94.5m36-94.5v92m36-92v92M179.3 11v90.8M-4 12.8h218.8M-4 36h218.8M-5.7 79.3h220.5M-5.8 101.8h219.3" fill="none" stroke="#BABABA" stroke-miterlimit="10"/>
+  <g fill="#C5C5C5" font-family="'Raleway-Regular'" font-size="6">
+    <text transform="translate(173 112.25)">
+      Май
+    </text>
+    <text transform="translate(100 112.25)">
+      Март
+    </text>
+    <text transform="translate(25.25 112.25)">
+      Январь
+    </text>
+    <text transform="translate(58.5 112.25)">
+      Февраль
+    </text>
+    <text transform="translate(133 112.25)">
+      Апрель
+    </text>
+  </g>
+  <path fill="none" stroke="#5D4843" stroke-width="3" stroke-miterlimit="10" d="M-3.8 61.3L18 48.2l33.3 17.9 37.5-6.6 36-20.6 33.5 10.3 40-23.2"/>
+  <path fill="none" stroke="#E18C44" stroke-width="3" stroke-miterlimit="10" d="M-5.6 64.9l46.9 18.4 50.7-4L175.8 57l24.5 22.8 14.5-41.5"/>
+</svg>
