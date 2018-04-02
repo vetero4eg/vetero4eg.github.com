@@ -53,19 +53,65 @@
 			</svg>
 		</div>
 	</div>
+	<div class="mobile-menu">
+		<div class="mobile-menu-logo">
+			<img class="logo-mob" src="img/mobMenuLogo.png" alt="logo">
+			<div class="close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<path d="M505.943 6.058c-8.077-8.077-21.172-8.077-29.249 0L6.058 476.693c-8.077 8.077-8.077 21.172 0 29.249A20.612 20.612 0 0 0 20.683 512a20.614 20.614 0 0 0 14.625-6.059L505.943 35.306c8.076-8.076 8.076-21.171 0-29.248z"
+					/>
+					<path d="M505.942 476.694L35.306 6.059c-8.076-8.077-21.172-8.077-29.248 0-8.077 8.076-8.077 21.171 0 29.248l470.636 470.636a20.616 20.616 0 0 0 14.625 6.058 20.615 20.615 0 0 0 14.624-6.057c8.075-8.078 8.075-21.173-.001-29.25z"
+					/>
+				</svg>
+			</div>
+			<nav class="mobile">
+				<a href="/">
+					<li class="mobile-item">Главная</li>
+				</a>
+				<a href="#">
+					<li class="mobile-item">О компании</li>
+				</a>
+				<a href="#">
+					<li class="mobile-item">Услуги</li>
+				</a>
+				<a href="#">
+					<li class="mobile-item">Вакансии</li>
+				</a>
+				<a href="#">
+					<li class="mobile-item">Контакты</li>
+				</a>
+			</nav>
+			<div class="soc soc-mobile">
+				<a href="#" class="fb">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="wu">
+					<i class="fab fa-whatsapp"></i>
+				</a>
+				<a href="#" class="sc">
+					<i class="fab fa-skype"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-3">
+					<div class="col-3 col-lg-auto">
 						<a href="/" class="logo">
 							<img src="img/logo.png" alt="Vox Com logo" class="logo__img">
 						</a>
 					</div>
-					<div class="col-9">
+					<div class="col-9 col-lg-auto">
 						<div class="row top-line justify-content-between align-items-center no-gutters">
 							<div class="col-auto">
 								<button class="callback btn">Заказать обратный звонок</button>
+							</div>
+							<div class="col-auto selected-num">
+								<a href="tel:+74852338122" class="header__phone">
+									+7 (4852) 33-81-22
+								</a>
 							</div>
 							<div class="col">
 								<a href="#" class="lk">Личный кабинет</a>
@@ -74,6 +120,12 @@
 								<button class="enter btn btn--blue">
 									<i class="fal fa-caret-right"></i> Войти
 								</button>
+							</div>
+							<div class="col-auto menu-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zm0-156.879H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zm0 313.758H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"
+									/>
+								</svg>
 							</div>
 						</div>
 						<div class="row middle-line justify-content-center">
@@ -108,7 +160,8 @@
 								</p>
 							</div>
 						</div>	
-						<nav class="main-menu">
+						</div>
+						<nav class="main-menu col-9 offset-md-3">
 							<ul class="nav-items">
 								<li class="nav-item active">
 									<a href="/">Главная</a>
@@ -140,6 +193,19 @@
 						</nav>
 					</div>
 				</div>
+				<div class="row mobile-line justify-content-between">
+					<div class="col-3 col-lg-auto">
+						<div class="phone-icon">
+							<i class="fal fa-phone"></i>
+						</div>
+					</div>
+					<div class="col-9">
+						<select name="phone" id="number" class="custom-select numbers" placeholder="Выберите город">
+							<option value="ya">Ярославль</option>
+							<option value="che">Череповец</option>
+							<option value="spb">Санкт-Петербург</option>
+						</select>
+					</div>
 			</div>
 		</header>
 		<!--END Header-->
@@ -171,7 +237,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-lg-6 col-3">
 						<!--video background
 						<div class="video">
 							<video autoplay playsinline muted loop preload poster="">
@@ -192,7 +258,7 @@
 						</div>
 					-->
 					</div>
-					<div class="col-6">
+					<div class="col-lg-6 col-9 info">
 						<!--здесь приходится идти против СЕО, тег h1 в мозиле будет больше, чем надо и это не удается отловить-->
 						<p class="hero__title h1">Контакт-Центр нового поколения Современные технологии<br> для Вашего бизнеса </p>
 						<ul class="hero__items">
@@ -293,12 +359,12 @@
 		<section class="workWith" id="work">
 			<div class="container">
 				<div class="row workWith-text">
-					<div class="col-9">
+					<div class="col-xl-9 col-10">
 						<h2 class="section__title">Работайте с лидерами рынка</h2>
 					</div>
 				</div>
 				<div class="row rocketWrap">
-					<div class="col-8">
+					<div class="col-xl-8 col-10">
 						<p>«Индивидуальный подход к каждому клиенту» - для нас это не просто слова. Мы прилагаем максимум усилий и навыков для удовлетворения любой просьбы или вопроса клиента. Специалисты нашей компании имеют реальный опыт в области решения нестандартных задач и обеспечения безукоризненной работы. За годы качественной работы мы завоевали доверие сотни клиентов.
 						</p>
 					</div>
@@ -319,7 +385,7 @@
 					</div>	
 				</div>
 				<div class="row">
-					<div class="col-3">
+					<div class="col-lg-3 col-sm-6">
 						<a href="#" class="btn">О компании</a>
 					</div>
 				</div>
@@ -401,9 +467,9 @@
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-xl-6 col-4">
 						</div>
-						<div class="col-6 char-wrap">
+						<div class="col-xl-6 col-8 char-wrap">
 							<i class="far fa-chart-bar"></i>
 							<ul class="char-items">
 								<li class="char-item">Анализ и прогнозирование нагрузки</li>
@@ -590,7 +656,7 @@
 			<div class="container">
 				<h2 class="section__title">Приглашаем в нашу команду</h2>
 				<div class="row">
-					<div class="col-9 offset-md-1">
+					<div class="col-xl-9 col-10 offset-xl-1 offset-lg-2">
 						<h3 class="theme">Оператор Call-центра</h3>
 						<div class="invite-point">
 							<div class="icon">
@@ -709,7 +775,7 @@
 				</svg>
 			</div>
 			<div class="container">
-				<div class="col-8 offset-md-4 blured">
+				<div class="col-xl-8 offset-xl-4 col-7 offset-md-5 blured">
 					<h2 class="section__title">Давайте обсудим детали уже сегодня?</h2>
 					<form action="#" method="post" target="_blank" class="callback-form">
 						<input type="text" name="name" class="username" placeholder="Ваше Имя" required autocomplete>
