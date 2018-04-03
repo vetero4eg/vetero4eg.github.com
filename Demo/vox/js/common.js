@@ -299,11 +299,11 @@ $(function() {
       $(this)
         .parents(".custom-select")
         .removeClass("opened");
-      $(this)
+      $(".custom-options")
         .parents(".custom-select")
         .find(".custom-select-trigger")
         .text($(this).text());
-      $("#" + $(this).attr("data-value")).show().siblings().hide();  
+      $("." + $(this).attr("data-value")).show().siblings().hide();  
     });  
 
     $(".header .menu-icon").click(function() {
@@ -315,34 +315,23 @@ $(function() {
       $(".mobile-menu").fadeOut(300);
     });
 
-/*
-    const closeAnim = new TimelineMax({paused: true});
-    
-    closeAnim 
-    .to(".header .close path", 0.25, {transformOrigin: "50% 50%", scale: 0, opacity: 0.5, ease: Sine.easeIn})
-    .to(".header .close path", 0.25, {attr: {d: "M505.943 6.058c-8.077-8.077-21.172-8.077-29.249 0L6.058 476.693c-8.077 8.077-8.077 21.172 0 29.249A20.612 20.612 0 0 0 20.683 512a20.614 20.614 0 0 0 14.625-6.059L505.943 35.306c8.076-8.076 8.076-21.171 0-29.248z M505.942 476.694L35.306 6.059c-8.076-8.077-21.172-8.077-29.248 0-8.077 8.076-8.077 21.171 0 29.248l470.636 470.636a20.616 20.616 0 0 0 14.625 6.058 20.615 20.615 0 0 0 14.624-6.057c8.075-8.078 8.075-21.173-.001-29.25z"}, scale:1, opacity: 1, ease: Sine.easeIn});
-
-    $(".header .close").hover(
-      function(){
-      closeAnim.play();
-      },
-      function(){
-        closeAnim.reverse();
-      }
-  );
-*/
-
     
     if (window.innerWidth < 1201) {
       headerAnim.kill(null, ".top-line");
     }
 
     if(window.innerWidth < 1023) {
-      $(".header .logo img").attr("src", "img/logo-white.png");
+      $(".header .logo img").attr("src", "img/voxcom-w.png");
       headerAnim.kill(null, ".logo");
       headerAnim.to(".mobile-line", 0.8, { opacity: 0, height: 0, margin: 0, delay: 0.2 }, "0");
+      //ctrl.removeScene(scene4);
+      sourceContent.kill({opacity: true}, ".source-text");
     }
-
+    
+    if(window.innerWidth < 769) {
+      //ctrl.removeScene([scene1, scene5]);
+    }
+    
     $(window).resize(function(){
       headerAnim.restart();
       if (window.innerWidth < 1201) {
@@ -354,10 +343,19 @@ $(function() {
         $(".header .logo img").attr("src", "img/logo-white.png");
         headerAnim.kill(null, ".logo");
         headerAnim.to(".mobile-line", 0.8, { opacity: 0, height: 0, margin: 0, padding: 0, delay: 0.2 }, "0");
+        //ctrl.removeScene(scene4);
+        sourceContent.kill({opacity: true}, ".source-text");
       } else {
         $(".header .logo img").attr("src", "img/logo.png");
         headerAnim.kill(null, ".mobile-line");
         headerAnim.to(".logo", 0.3, { opacity: 0, height: 0 }, "0");
+       // ctrl.addScene(scene4);
       }
+      if (window.innerWidth < 769) {
+        //ctrl.removeScene([scene1, scene5]);
+      } else {
+        //ctrl.addScene([scene1, scene5]);
+      }
+
     });
 });

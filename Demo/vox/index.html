@@ -10,7 +10,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="img/logo.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -30,12 +30,12 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 	<!-- Template Basic Images End -->
-
+	
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 	<script defer src="js/fontawesome-all.min.js"></script>
-	<link rel="stylesheet" href="css/main.min.css?2">
+	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
@@ -97,21 +97,16 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-3 col-lg-auto">
+				<div class="row justify-content-between">
+					<div class="col-lg-3 col-2">
 						<a href="/" class="logo">
 							<img src="img/logo.png" alt="Vox Com logo" class="logo__img">
 						</a>
 					</div>
-					<div class="col-9 col-lg-auto">
+					<div class="col-lg-9 col-10">
 						<div class="row top-line justify-content-between align-items-center no-gutters">
 							<div class="col-auto">
 								<button class="callback btn">Заказать обратный звонок</button>
-							</div>
-							<div class="col-auto selected-num">
-								<a href="tel:+74852338122" class="header__phone">
-									+7 (4852) 33-81-22
-								</a>
 							</div>
 							<div class="col">
 								<a href="#" class="lk">Личный кабинет</a>
@@ -120,6 +115,17 @@
 								<button class="enter btn btn--blue">
 									<i class="fal fa-caret-right"></i> Войти
 								</button>
+							</div>
+							<div class="col-auto selected-num">
+								<a href="tel:+74852338122" class="header__phone ya">
+									+7 (4852) 33-81-22
+								</a>
+								<a href="tel:+74852338123" class="header__phone che">
+									+7 (4852) 33-81-23
+								</a>
+								<a href="tel:+74852338124" class="header__phone spb">
+									+7 (4852) 33-81-24
+								</a>
 							</div>
 							<div class="col-auto menu-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -132,7 +138,7 @@
 							<div class="col-auto contact-item">
 								<a href="tel:+74852338122" class="header__phone">
 									<i class="fal fa-phone"></i>
-									+7 (4852) 33-81-22
+									+7 (4852) 33-81-22 
 								</a>
 								<p class="header__city">
 									<i class="fal fa-map-marker-alt"></i>
@@ -142,7 +148,7 @@
 							<div class="col-auto contact-item">
 								<a href="tel:+74852338122" class="header__phone">
 									<i class="fal fa-phone"></i>
-									+7 (4852) 33-81-22
+									+7 (4852) 33-81-22 
 								</a>
 								<p class="header__city">
 									<i class="fal fa-map-marker-alt"></i>
@@ -152,16 +158,16 @@
 							<div class="col-auto contact-item">
 								<a href="tel:+74852338122" class="header__phone">
 									<i class="fal fa-phone"></i>
-									+7 (4852) 33-81-22
+									+7 (4852) 33-81-22 
 								</a>
 								<p class="header__city">
 									<i class="fal fa-map-marker-alt"></i>
-									г. Ярославль
+									г. Санкт-Петербург
 								</p>
 							</div>
+						</div>	
 						</div>
-						</div>
-						<nav class="main-menu col-9 offset-md-3">
+						<nav class="main-menu col-9 offset-md-3 justify-content-end">
 							<ul class="nav-items">
 								<li class="nav-item active">
 									<a href="/">Главная</a>
@@ -192,21 +198,18 @@
 							</ul>
 						</nav>
 					</div>
-				</div>
-				<div class="row mobile-line justify-content-between">
-					<div class="col-3 col-lg-auto">
-						<div class="phone-icon">
-							<i class="fal fa-phone"></i>
+					<div class="row mobile-line justify-content-end">
+						<div class="col-auto">
+						</div>
+						<div class="col-auto">
+							<select name="phone" id="number" class="custom-select numbers" placeholder="Выберите город">
+								<option value="ya">Ярославль</option>
+								<option value="che">Череповец</option>
+								<option value="spb">Санкт-Петербург</option>
+							</select>
 						</div>
 					</div>
-					<div class="col-9">
-						<select name="phone" id="number" class="custom-select numbers" placeholder="Выберите город">
-							<option value="ya">Ярославль</option>
-							<option value="che">Череповец</option>
-							<option value="spb">Санкт-Петербург</option>
-						</select>
-					</div>
-			</div>
+				</div>
 		</header>
 		<!--END Header-->
 		<!--Hero section-->
@@ -237,7 +240,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-3">
+					<div class="col-lg-6 col-sm-3 col-0">
 						<!--video background
 						<div class="video">
 							<video autoplay playsinline muted loop preload poster="">
@@ -258,9 +261,9 @@
 						</div>
 					-->
 					</div>
-					<div class="col-lg-6 col-9 info">
+					<div class="col-lg-6 col-sm-9 col-12 info">
 						<!--здесь приходится идти против СЕО, тег h1 в мозиле будет больше, чем надо и это не удается отловить-->
-						<p class="hero__title h1">Контакт-Центр нового поколения Современные технологии<br> для Вашего бизнеса </p>
+						<p class="hero__title h1">Контакт-Центр нового поколения<br> Современные технологии<br> для Вашего бизнеса </p>
 						<ul class="hero__items">
 							<li class="hero__item">Любой вид коммуникаций</li>
 							<li class="hero__item">Искуственный интеллект</li>
@@ -277,6 +280,7 @@
 								/>
 							</svg>
 						</a>
+						<button class="callback btn">Заказать обратный звонок</button>
 					</div>
 				</div>
 
@@ -287,7 +291,7 @@
 		<section class="benefit" id="benefit">
 			<div class="container">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-sm-4 offset-sm-0 col-12 item">
 						<div class="benefit__icon benefit__icon--face">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.6 317.9">
 								<filter id="dropShadow">
@@ -308,7 +312,7 @@
 						</div>
 						<p class="benefit__descr">Самостоятельный подбор и обучение кадров</p>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-4 offset-sm-0 col-12 item">
 						<div class="benefit__icon benefit__icon--world">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311 297">
 								<path fill="none" stroke="#489098" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926"
@@ -326,11 +330,11 @@
 								<path fill="#489098" stroke="#489098" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926"
 								d="M223.3 159.7l33.7-41.3-9.6-5.7-29.9 36.8zM150 252.9l34.4-40.8-9.5-5.2-30.3 38.2z" />
 							</svg>
-
+							
 						</div>
 						<p class="benefit__descr">Работа с клиентами в любой точке мира</p>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-4 offset-sm-0 col-12 item">
 						<div class="benefit__icon benefit__icon--clock">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.6 258.6">
 								<path fill="#489098" d="M152.8 230.1H183c3 0 5.3.6 6.9 1.9 1.6 1.2 2.4 2.9 2.4 5 0 1.9-.6 3.5-1.9 4.8-1.3 1.3-3.2 2-5.7 2H142c-2.9 0-5.2-.8-6.8-2.4-1.6-1.6-2.4-3.5-2.4-5.7 0-1.4.5-3.2 1.6-5.5 1-2.3 2.2-4.1 3.4-5.4 5.1-5.3 9.8-9.9 13.9-13.7 4.1-3.8 7.1-6.3 8.9-7.5 3.2-2.2 5.8-4.5 7.9-6.8 2.1-2.3 3.7-4.6 4.8-6.9 1.1-2.4 1.6-4.7 1.6-7 0-2.5-.6-4.7-1.8-6.6-1.2-2-2.8-3.5-4.8-4.5-2-1.1-4.2-1.6-6.6-1.6-5.1 0-9 2.2-11.9 6.7-.4.6-1 2.2-2 4.7-.9 2.6-1.9 4.6-3.1 6-1.1 1.4-2.8 2.1-5 2.1-1.9 0-3.5-.7-4.8-1.9-1.3-1.3-1.9-3-1.9-5.2 0-2.6.6-5.4 1.8-8.3 1.2-2.9 3-5.5 5.4-7.9 2.4-2.4 5.4-4.2 9-5.7 3.6-1.4 7.9-2.2 12.8-2.2 5.9 0 10.9.9 15.1 2.8 2.7 1.2 5.1 2.9 7.1 5.1 2.1 2.2 3.7 4.7 4.8 7.5 1.1 2.8 1.7 5.8 1.7 8.8 0 4.8-1.2 9.2-3.6 13.1-2.4 3.9-4.8 7-7.3 9.2-2.5 2.2-6.6 5.7-12.4 10.5-5.8 4.7-9.8 8.4-12 11-.7.9-1.7 2.2-2.6 3.6zm78.3 6.3v-10.8H202c-3.7 0-6.4-.8-8.2-2.5-1.8-1.7-2.7-3.9-2.7-6.8 0-.7.1-1.5.4-2.2.3-.7.7-1.5 1.2-2.4.5-.8 1.1-1.6 1.7-2.4.6-.8 1.3-1.7 2.1-2.8l30.7-41c2-2.7 3.7-4.6 4.9-5.9 1.3-1.2 2.8-1.8 4.7-1.8 5.9 0 8.8 3.4 8.8 10.1v44.8h2.5c3 0 5.4.4 7.2 1.2 1.8.8 2.7 2.6 2.7 5.3 0 2.2-.7 3.9-2.2 4.9-1.5 1-3.7 1.5-6.6 1.5h-3.5v10.8c0 3-.7 5.2-2 6.6-1.3 1.4-3.1 2.2-5.3 2.2-2.2 0-3.9-.8-5.2-2.2-1.4-1.5-2.1-3.7-2.1-6.6zm-24.9-23.7h24.9V179l-24.9 33.7z"
@@ -348,23 +352,23 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-6">
-						<a class="btn btn--long" href="#">Подробнее об услугах контакт-центра</a>
+					<div class="col-sm-6 offset-sm-0 col-12">
+						<a class="btn btn--long" href="#">Подробнее<br> об услугах контакт-центра</a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--END Benefit-->
-		<!--work with section-->
+		<!--work with section-->	
 		<section class="workWith" id="work">
 			<div class="container">
 				<div class="row workWith-text">
-					<div class="col-xl-9 col-10">
+					<div class="col-xl-9 col-12">
 						<h2 class="section__title">Работайте с лидерами рынка</h2>
 					</div>
 				</div>
 				<div class="row rocketWrap">
-					<div class="col-xl-8 col-10">
+					<div class="col-xl-8 col-12">
 						<p>«Индивидуальный подход к каждому клиенту» - для нас это не просто слова. Мы прилагаем максимум усилий и навыков для удовлетворения любой просьбы или вопроса клиента. Специалисты нашей компании имеют реальный опыт в области решения нестандартных задач и обеспечения безукоризненной работы. За годы качественной работы мы завоевали доверие сотни клиентов.
 						</p>
 					</div>
@@ -382,15 +386,15 @@
 								<path fill="none" stroke="#CB8948" d="M195.8 157.7l.6-66.1 62.7-22.3 40.5 56.1-38.6 53.7z" />
 							</g>
 						</svg>
-					</div>
+					</div>	
 				</div>
 				<div class="row">
-					<div class="col-lg-3 col-sm-6">
+					<div class="col-lg-3 col-sm-4 col-6 offset-3 offset-lg-0 offset-sm-4">
 						<a href="#" class="btn">О компании</a>
 					</div>
 				</div>
 				<div class="row justify-content-between progress-wrapper">
-					<div class="col-3 progress">
+					<div class="col-md-3 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 progress">
 						<h3 class="h3 progress-descr">Процент завершенных вызовов</h3>
 						<div class="progress-bar" id="rate">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.6 297.6">
@@ -405,7 +409,7 @@
 						</div>
 						<p class="progress-caption">Call Completion Rate</p>
 					</div>
-					<div class="col-3 progress">
+					<div class="col-md-3 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 progress">
 						<h3 class="h3 progress-descr">Процент вызовов, которые были отвечены за установленный интервал времени</h3>
 						<div class="progress-bar" id="service">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.6 297.6">
@@ -420,7 +424,7 @@
 						</div>
 						<p class="progress-caption">Service Level</p>
 					</div>
-					<div class="col-3 progress">
+					<div class="col-md-3 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 progress">
 						<h3 class="h3 progress-descr">Процент решенных вопросов при первом контакте</h3>
 						<div class="progress-bar" id="resolution">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.6 297.6">
@@ -488,10 +492,54 @@
 		<!--END work with-->
 		<!--source-->
 		<section class="source">
+				<div class="source__bcg">
+					<svg class="pentas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="558.8,391.3 523.7,487.2 420.9,487.2 391,384.6 475.1,326.5 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="406.1,522 327.7,456.5 362.5,359.8 469.1,366.4 495.4,465.1 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="433.8,502.7 469,406.9 571.8,407 601.6,509.6 517.5,567.6 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="370.8,328.6 406,232.8 508.8,232.9 538.6,335.5 454.5,393.5 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="474.9,278 510.2,182.2 612.9,182.3 642.7,284.9 558.6,343 "
+						/>
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="685.5,219.3 600.5,275.9 517.6,215.2 554,114.8 656.2,117.5 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="642.7,231.7 677.9,135.8 780.7,136 810.5,238.6 726.4,296.6 "
+						/>
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="790.5,323.2 755.3,419.1 652.6,419 622.7,316.5 706.7,258.4 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="593.2,455.1 583.8,353.4 676.7,309.4 747.7,389.2 696.7,477.7 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="296.6,248.2 331.8,152.4 434.5,152.5 464.3,255.1 380.3,313.2 "
+						/>
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="194.5,344.1 109.5,400.7 26.6,340 63,239.6 165.2,242.3 "
+						/>
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="361.4,252.2 326.2,348.1 223.5,348.1 193.6,245.5 277.6,187.4 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="193.9,307.6 282.4,256.8 361.1,322.9 318,420.7 216.3,411.1 "
+						/>
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="389.9,472.5 329.3,554.8 230.7,525.9 230.7,419.1 327.7,386.8 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="83,219.4 118.2,123.5 221,123.7 250.8,226.2 166.7,284.3 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="124.2,380.8 186.3,299.7 284.4,330.2 282.5,437.1 185,467.6 "
+						/>
+						<polygon class="pent" fill="none" stroke="#7B7876" stroke-width="3" stroke-miterlimit="10" points="528.1,184.2 442.9,240.5 360.3,179.4 397.1,79.2 499.3,82.3 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="437.6,86.6 499.6,5.4 597.7,36 595.8,142.8 498.3,173.4 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="193.6,161.4 228.8,65.6 331.6,65.7 361.4,168.3 277.3,226.4 "
+						/>
+						<polygon class="pent" fill="none" stroke="#E29026" stroke-width="3" stroke-miterlimit="10" points="558.3,566.4 548.9,464.7 641.8,420.7 712.8,500.5 661.7,589.1 "
+						/>
+					</svg>
+				</div>
 			<div class="container">
 				<h2 class="section__title">Наши ресурсы</h2>
 				<div class="row source-tabs">
-					<div class="col-3 source-tab active">
+					<div class="col-md-3 col-12 source-tab active">
 						<div class="source-tab-icon">
 							<svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 150">
 								<path fill="none" d="M159.3 143.7H57c-27.2 0-49.3-19.2-49.3-42.9S29.8 57.9 57 57.9c6.1 0 11.9 1 17.3 2.7m0 0C72.4 37 86.2 14.9 108.5 8.4c25.8-7.5 53.1 8.7 61.1 36.2 2.1 7.3 2.7 14.7 1.8 21.7m0 0c4-.8 8.3-1.3 12.6-1.3 27.3 0 49.3 17.6 49.3 39.3 0 21.7-22.1 39.3-49.3 39.3"
@@ -502,7 +550,7 @@
 							Независимые площадки
 						</p>
 					</div>
-					<div class="col-3 source-tab">
+					<div class="col-md-3 col-12 source-tab">
 						<div class="source-tab-icon">
 							<svg class="vacancies" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.1 318.6">
 								<path fill="none" stroke-linecap="round" stroke-linejoin="round"	d="M210.1 119.3c-8.2 28.3-30.4 48.9-51.5 50-21.2-1-43.5-21.8-51.6-50.2l-4 .6c-4.5.7-8.8-2.4-9.5-6.9l-3.9-25.2c-.7-4.5 2.4-8.8 6.9-9.5l2.8-.4c-1.3-3.9-2-8.1-2-12.5v-9.3c0-22.7 18.6-41.2 41.2-41.2h4.9c-.1-.8 0-1.5.3-2.2 2.5-6.7 19.4-6.5 37.8.5 3.9 1.5 7.5 3.1 10.8 4.9 14.9 6.2 25.4 21 25.4 38.1v9.3c0 4.4-.7 8.6-1.9 12.5l2.8.4c4.5.7 7.6 5 6.9 9.5l-3.9 25.2c-.7 4.5-5 7.6-9.5 6.9l-2-.5zm45.7 170h-44.6M13.1 314l-7.4-67.3v-7.1c0-15.7 15.9-24.8 29.2-27.5 12.1-2.5 57.5-12.3 72.2-22.5l.9-.1 26.6 124.7 16-82.3-13.6-34.8h43.6L167.1 232l15.5 82.3 27-124.7.9.1c14.7 10.2 60.1 20 72.2 22.5 13.3 2.7 29.2 11.8 29.2 27.5v7.1l-7.4 67.3"
@@ -510,11 +558,11 @@
 							</svg>
 						</div>
 						<p class="source-tab-title">
-							<span class="source-tab-num">500</span><br>
+							<span class="source-tab-num">500</span><br> 
 							рабочих мест
 						</p>
 					</div>
-					<div class="col-3 source-tab">
+					<div class="col-md-3 col-12 source-tab">
 						<div class="source-tab-icon">
 							<svg class="naumen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 523.5 66">
 								<path fill="none" d="M307.1 40.8c-.7-1.3-1.1-1.9-1.4-2.6-4.3-9.3-8.5-18.6-12.8-27.9-1.5-3.4-4.1-5.7-7.8-5.9-6.9-.2-13.8-.2-20.6 0-4.4.1-8.4 4.1-8.4 8.5-.1 15 0 30-.1 44.9 0 1.8.7 2.2 2.3 2.1 3.8-.1 7.6-.1 11.4 0 1.9.1 2.4-.6 2.4-2.5-.1-12.8 0-25.7 0-38.5 0-2.8.9-4.1 2.9-4.6s3.7.6 4.8 3c4.9 11 9.8 21.9 14.6 33 3.4 8 5.5 9.8 14.6 9.5 4.6-.1 7.7-2.2 9.6-6.3 3.7-8.4 7.3-16.8 11-25.2 1.7-3.9 3.4-7.9 5.2-11.8.8-1.9 2.4-2.7 4.4-2.3 1.9.4 2.9 1.8 3 3.7.1.7 0 1.4 0 2.1v37.2c0 1.8.5 2.5 2.4 2.5 3.8-.1 7.6-.1 11.4 0 1.8.1 2.3-.6 2.3-2.4-.1-14.6 0-29.2 0-43.9 0-5.3-4.1-9.4-9.4-9.4-5.9 0-11.9.1-17.8 0-4.7-.1-7.9 2.1-9.8 6.3-2.6 5.7-5.2 11.5-7.9 17.2-2.1 4.4-4.1 8.5-6.3 13.3zM435 35.5v22.4c0 1.6.4 2.2 2.1 2.1 3.9-.1 7.7 0 11.6 0 2.9 0 2.9 0 2.9-2.8V21.1c0-1.1.1-2.3.3-3.4.4-2 1.7-2.9 3.7-2.8 2.3.1 3.3 1.8 4.3 3.5 7.1 12.4 14.2 24.9 21.3 37.3 1.6 2.9 4.1 4.3 7.2 4.3 7.5.1 15.1.1 22.6 0 5-.1 9-4 9.1-9 .1-14.8 0-29.5.1-44.3 0-1.6-.6-2.3-2.3-2.3-3.9.1-7.9.1-11.8 0-1.9-.1-2.5.5-2.5 2.4.1 8.1 0 16.2 0 24.3v14.4c0 2.1-1 3.4-3 3.9-1.9.5-3.2-.4-4.2-1.9-.5-.7-.9-1.5-1.3-2.2-6.7-11.9-13.4-23.7-20-35.6-2-3.5-4.8-5.3-8.9-5.3-7.2.1-14.3 0-21.5 0-5.7 0-9.5 4-9.5 9.7-.2 7-.2 14.2-.2 21.4zM400 4.3h-27.1c-6.1 0-9.9 3.7-9.9 9.7-.1 12-.1 24.1 0 36.1 0 6 3.9 9.8 9.9 9.8h55c1.9 0 2.5-.6 2.5-2.5-.1-2.9-.1-5.9 0-8.8 0-1.3-.5-1.9-1.8-1.8h-44.3c-2.9 0-4.1-.8-4.7-3.1-1-3.4.9-5.9 4.4-5.9h44.1c1.7 0 2.5-.5 2.4-2.3-.1-2.1 0-4.3 0-6.5 0-3.4 0-3.4-3.3-3.4H384c-2.1 0-3.6-.7-4.2-2.8-1.1-3.5.9-6.2 4.8-6.2h43c2.9 0 2.9 0 2.9-3 0-2.3-.1-4.6 0-6.9.1-2-.5-2.8-2.7-2.7-9.3.4-18.5.3-27.8.3zM179.1 44.5c.3 8.4 3.5 12.3 11.2 14 3.5.7 7.1 1.3 10.6 1.4 10.4.2 20.8.2 31.2 0 3.1-.1 6.3-.8 9.2-1.8 7.3-2.4 9.6-8.2 9.6-15.3.1-12.1.3-24.2.5-36.3 0-1.8-.7-2.2-2.3-2.1-3.9.1-7.7.1-11.6.1-3 0-3 0-3 2.9 0 10 .1 19.9 0 29.9 0 5.6-2.8 8.7-8.3 8.9-6.3.3-12.6.4-18.9.4-2.3 0-4.6-.4-6.8-.9-3.1-.7-4.6-2.4-4.6-5.1-.2-7.2-.3-14.5-.5-21.7l-.3-12c0-1.7-.5-2.5-2.4-2.4-4 .1-8 .1-12 0-1.7 0-2.3.5-2.2 2.2.3 20.3.4 30.8.6 37.8zm2.3 15.4c-1.9-3.5-3.5-6.6-5.2-9.7-7.2-13.5-14.5-27-21.7-40.5-1.9-3.6-4.8-5.5-9-5.4-6.7.1-13.3 0-20 0-3.7 0-6.5 1.7-8.2 4.9-9 16.3-17.9 32.6-26.7 48.8-.3.5-.5 1.1-.8 1.9 6.7 0 13.1 0 19.4-.1.6 0 1.5-.7 1.9-1.4 1.2-2.1 2.1-4.2 3.2-6.3 5.7-11.6 11.5-23.2 17.2-34.9.9-1.8 2-3.3 4.1-3.3 2 0 3.1 1.5 3.9 3.2 1.2 2.5 2.5 5 3.7 7.5 5.4 11 10.9 22.1 16.3 33.1.4.8 1.2 1.9 1.9 2 6.6.3 13 .2 20 .2zM4.7 35.2V14.1c0-6.1 3.7-9.8 9.7-9.8h21.1c4.2 0 7.1 1.8 9.1 5.4C51.3 21.5 58 33.4 64.7 45.4c.5.8.8 1.8 1.5 2.4 1 .8 2.3 1.5 3.5 1.6 1.5 0 2.9-1 3.2-2.7.2-1 .3-2 .3-3V7.6c0-3.2 0-3.2 3.3-3.2h11.2c1.4 0 2 .4 2 2 0 14.9 0 29.8-.1 44.7 0 4.8-4.3 8.9-9.2 8.9-7.5 0-14.9 0-22.4-.1-3.2-.1-5.7-1.4-7.3-4.4-7-12.5-14.2-24.9-21.3-37.3-.4-.7-.8-1.4-1.3-2-1.1-1.4-2.6-1.7-4.3-1.3-1.7.5-2.4 1.7-2.5 3.4-.1 1.5-.1 3-.1 4.5v34.8c0 1.8-.5 2.4-2.3 2.3-3.9-.1-7.9-.1-11.8 0-1.9.1-2.5-.5-2.5-2.4.2-7.4.1-14.9.1-22.3z"/>
@@ -524,7 +572,7 @@
 							Naumen<br> contact center
 						</p>
 					</div>
-					<div class="col-3 source-tab">
+					<div class="col-md-3 col-12 source-tab">
 						<div class="source-tab-icon">
 							<svg class="rezerv" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258 158">
 								<path d="M145.7 69.8l-42.2-.6-11.6-34.6 33.5-27.5 33.8 24.5zm94.5 82.3l-42.1-.6-11.7-34.6L220 89.4l33.7 24.5zm-181.4 0l-42.2-.6L5 116.9l33.5-27.5 6.5 4.7 27.3 19.8zm39-99.8L48.2 96.4M65 134.3h127.3m13.1-33l-52.3-52.5" fill="none" />
@@ -535,15 +583,20 @@
 						</p>
 					</div>
 				</div>
+				<div class="row source-small">
+					<div class="col-sm-6 col-7">
+						<a href="#" class="btn btn--more">Подробнее</a>
+					</div>
+				</div>
 			</div>
 			<div class="source-content">
 				<div class="container">
 					<div class="row source-item active">
-						<div class="col-6">
+						<div class="col-lg-6 col-md-10 col-sm-11">
 							<p class="source-text">Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! реализация намеченных плановых заданий обеспечивает кругу (специалистов) участие в формировании новых предложений.</p>
 							<a href="#" class="btn btn--more">Подробнее</a>
 						</div>
-						<div class="col-6">
+						<div class="col-lg-6 col-md-2 source-graf">
 							<div class="source-svg">
 								<svg class="source-svg-01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552.7 362.7">
 									<g fill="none" stroke="#ffffff" stroke-miterlimit="10">
@@ -579,11 +632,11 @@
 						</div>
 					</div>
 					<div class="row source-item">
-						<div class="col-6">
+						<div class="col-lg-6 col-md-10 col-sm-11">
 							<p class="source-text">Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! реализация намеченных плановых заданий обеспечивает кругу (специалистов) участие в формировании новых предложений.</p>
 							<a href="#" class="btn btn--more">Подробнее</a>
 						</div>
-						<div class="col-6">
+						<div class="col-lg-6 col-md-2 source-graf">
 							<div class="source-svg">
 								<svg class="source-svg-02" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 492">
 									<path fill="none" stroke="#FBFEFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.926" d="M313.9 193.6c-12.2 42.3-45.4 73.1-77 74.7-31.6-1.5-65-32.6-77.1-75.1l-6 .9c-6.7 1-13.1-3.6-14.2-10.4l-5.8-37.6c-1-6.7 3.6-13.1 10.4-14.2l4.2-.7c-1.9-5.9-2.9-12.2-2.9-18.7V98.8c0-33.9 27.7-61.6 61.6-61.6h7.3c-.1-1.2.1-2.3.5-3.3 3.8-10 29-9.7 56.4.7 5.8 2.2 11.3 4.7 16.2 7.3 22.3 9.3 38 31.3 38 56.9v13.8c0 6.5-1 12.8-2.9 18.7l4.2.7c6.7 1.1 11.4 7.4 10.4 14.2l-5.8 37.6c-1.1 6.7-7.4 11.4-14.2 10.4l-3.3-.6zm68.2 254h-66.6m-296 36.9L8.4 384v-10.6c0-23.5 23.8-37.1 43.6-41.1 18.1-3.7 86-18.4 107.9-33.6l1.3-.2L201 484.8l23.8-122.9-20.2-52.1h65.2l-20.2 52.1 23.2 122.9 40.4-186.3 1.3.2c22 15.2 89.8 29.9 107.9 33.6 19.8 4 43.6 17.6 43.6 41.1V384l-11 100.5m186.6-198.9c.9 10.7-1.5 24.8-11.6 36.3-1.1 1.2-2.2 2.3-3.5 3.4l46.1 106.4 49.8-105.1c-1.9-1.5-3.7-3-5.2-4.7-8.9-9.9-10.7-25.3-9.9-36.4m121.5 197.2c17.5-91.5-2.2-128.3-106.3-156.1"/>
@@ -599,11 +652,11 @@
 						</div>
 					</div>
 					<div class="row source-item">
-						<div class="col-6">
+						<div class="col-lg-6 col-md-10 col-sm-11">
 							<p class="source-text">Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! реализация намеченных плановых заданий обеспечивает кругу (специалистов) участие в формировании новых предложений.</p>
 							<a href="#" class="btn btn--more">Подробнее</a>
 						</div>
-						<div class="col-6">
+						<div class="col-lg-6 col-md-2 source-graf">
 							<div class="source-svg">
 								<svg class="source-svg-03" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 803 205">
 									<path fill="none" stroke="#FFF" stroke-width="2" stroke-miterlimit="10" d="M138.3 162.9l99.3 2.3 111.6 2.2 134.8 1.7s0 1 .4.9c.4-.1 87.9-.1 87.9-.1v-1.3c-10.4-11.8-42.2-13.6-49-14-6.7-.4-4.8-3.6-4.8-3.6s7.1-10.7 9.7-14.6c2.5-3.9 4.4-3.7 4.4-3.7l44.6-5.8 5.5.8c-.2 2.2-.2 4.5 0 6.7"/>
@@ -621,11 +674,11 @@
 						</div>
 					</div>
 					<div class="row source-item">
-						<div class="col-6">
+						<div class="col-lg-6 col-md-10 col-sm-11">
 							<p class="source-text">Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! реализация намеченных плановых заданий обеспечивает кругу (специалистов) участие в формировании новых предложений.</p>
 							<a href="#" class="btn btn--more">Подробнее</a>
 						</div>
-						<div class="col-6">
+						<div class="col-lg-6 col-md-2 source-graf">
 							<div class="source-svg">
 								<svg class="source-svg-04" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 785 560">
 								<g fill="none" stroke="#FFF" stroke-width="2" stroke-miterlimit="10">
@@ -656,14 +709,14 @@
 			<div class="container">
 				<h2 class="section__title">Приглашаем в нашу команду</h2>
 				<div class="row">
-					<div class="col-xl-9 col-10 offset-xl-1 offset-lg-2">
+					<div class="col-xl-9 col-sm-10 offset-xl-1 offset-sm-2">
 						<h3 class="theme">Оператор Call-центра</h3>
 						<div class="invite-point">
 							<div class="icon">
 								<i class="fal fa-space-shuttle"></i>
 							</div>
 							<p class="invite-subtitle">Обязанности:</p>
-						</div>
+						</div>	
 						<ul>
 							<li>Прием входящих звонков</li>
 							<li>Консультирование</li>
@@ -672,7 +725,7 @@
 						<div class="invite-point">
 							<div class="icon">
 								<i class="fal fa-graduation-cap"></i>
-							</div>
+							</div>	
 							<p class="invite-subtitle">Требования:</p>
 						</div>
 						<ul>
@@ -686,7 +739,7 @@
 						<div class="invite-point">
 							<div class="icon">
 								<i class="fal fa-ruble-sign"></i>
-							</div>
+							</div>	
 							<p class="invite-subtitle">Условия:</p>
 						</div>
 						<ul>
@@ -775,7 +828,7 @@
 				</svg>
 			</div>
 			<div class="container">
-				<div class="col-xl-8 offset-xl-4 col-7 offset-md-5 blured">
+				<div class="col-xl-8 offset-xl-4 col-lg-7 offset-lg-5 col-sm-9 offset-sm-3 col-10 offset-2 blured">
 					<h2 class="section__title">Давайте обсудим детали уже сегодня?</h2>
 					<form action="#" method="post" target="_blank" class="callback-form">
 						<input type="text" name="name" class="username" placeholder="Ваше Имя" required autocomplete>
@@ -787,7 +840,7 @@
 			</div>
 		</section>
 		<!--END form-->
-	</div>
+	</div>	
 	<!--footer-->
 	<footer class="footer">
 		<div class="footer__bcg">
@@ -836,7 +889,7 @@
 		</div>
 		<div class="container">
 			<div class="row footer__top">
-				<div class="col-3">
+				<div class="col-3 offset-lg-0 offset-1 footer-menu">
 					<ul class="footer__nav">
 						<li class="footer__item">
 							<a href="#" class="footer__link">Главная</a>
@@ -855,22 +908,75 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-6">
+				<div class="col-6 footer-del">
 					<div class="map">
-						<iframe id="ya" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.50801754289!2d39.88556882857231!3d57.62284840187992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b29158e1b404ed%3A0xc5177687caa669ce!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8g0YPQuy4sIDIyLCDQr9GA0L7RgdC70LDQstC70YwsINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC7LiwgMTUwMDAw!5e0!3m2!1sru!2sru!4v1521242348464"
+						<iframe class="ya" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.50801754289!2d39.88556882857231!3d57.62284840187992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b29158e1b404ed%3A0xc5177687caa669ce!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8g0YPQuy4sIDIyLCDQr9GA0L7RgdC70LDQstC70YwsINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC7LiwgMTUwMDAw!5e0!3m2!1sru!2sru!4v1521242348464"
 							width="510" height="295" frameborder="0" style="border:0" allowfullscreen></iframe>
-						<iframe id="che" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.551456972603!2d37.931625316175044!3d59.12317373457684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46afb7b2053a092d%3A0x3252b13bcc67ce85!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMSwg0KfQtdGA0LXQv9C-0LLQtdGGLCDQktC-0LvQvtCz0L7QtNGB0LrQsNGPINC-0LHQuy4sIDE2MjYyMg!5e0!3m2!1sru!2sru!4v1521242545228"
+						<iframe class="che" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.551456972603!2d37.931625316175044!3d59.12317373457684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46afb7b2053a092d%3A0x3252b13bcc67ce85!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMSwg0KfQtdGA0LXQv9C-0LLQtdGGLCDQktC-0LvQvtCz0L7QtNGB0LrQsNGPINC-0LHQuy4sIDE2MjYyMg!5e0!3m2!1sru!2sru!4v1521242545228"
 							width="510" height="295" frameborder="0" style="border:0" allowfullscreen></iframe>
-						<iframe id="spb" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0020418854845!2d30.323085835208577!3d59.9155134582999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963056a2312de1%3A0xaaf0508573ebf2f7!2z0JzRg9C30LXQuSDRgNC-0Lot0LDRgNGC0LXRhNCw0LrRgtC-0LI!5e0!3m2!1sru!2sru!4v1521242914706"
+						<iframe class="spb" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0020418854845!2d30.323085835208577!3d59.9155134582999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963056a2312de1%3A0xaaf0508573ebf2f7!2z0JzRg9C30LXQuSDRgNC-0Lot0LDRgNGC0LXRhNCw0LrRgtC-0LI!5e0!3m2!1sru!2sru!4v1521242914706"
 							width="510" height="295" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 offset-lg-0 col-sm-5 col-12 offset-sm-1">
 					<select name="city" id="sources" class="custom-select sources" placeholder="Выберите город">
 						<option value="ya">Ярославль</option>
 						<option value="che">Череповец</option>
 						<option value="spb">Санкт-Петербург</option>
-					</select>
+					</select>	
+					<div class="footer__mobile">
+						<div class="ya city-info">
+							<div class="footer__city">
+								<i class="fal fa-map-marker-alt"></i>
+								<p>
+									г. Ярославль
+									<br> ул. Комсомольская д. 22
+								</p>
+							</div>
+							<a href="tel:+74852338122" class="footer__phone">
+								<i class="fal fa-phone"></i>
+								+7 (4852) 33-81-22
+							</a>
+							<a href="mailto:info@vox-com.ru" class="mail">
+								<i class="fal fa-envelope-open"></i>
+								info@vox-com.ru
+							</a>
+						</div>
+						<div class="che city-info">
+							<div class="footer__city">
+								<i class="fal fa-map-marker-alt"></i>
+								<p>
+									г. Череповец
+									<br> ул. Ленина д. 11
+								</p>
+							</div>
+							<a href="tel:+74852338122" class="footer__phone">
+								<i class="fal fa-phone"></i>
+								+7 (4852) 33-81-22
+							</a>
+							<a href="mailto:info@vox-com.ru" class="mail">
+								<i class="fal fa-envelope-open"></i>
+								info@vox-com.ru
+							</a>
+						</div>
+						<div class="spb city-info">
+							<div class="footer__city">
+								<i class="fal fa-map-marker-alt"></i>
+								<p>
+									г. Санкт-Петербург
+									<br> ул. Комсомольская д. 22
+								</p>
+							</div>
+							<a href="tel:+74852338122" class="footer__phone">
+								<i class="fal fa-phone"></i>
+								+7 (4852) 33-81-22
+							</a>
+							<a href="mailto:info@vox-com.ru" class="mail">
+								<i class="fal fa-envelope-open"></i>
+								info@vox-com.ru
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row footer__middle">
@@ -915,18 +1021,18 @@
 				</div>
 			</div>
 			<div class="row footer__bottom">
-				<div class="col-3">
+				<div class="col-sm-3 col-4">
 					<a href="/" class="footer__logo">
 						<img src="img/voxcom-w.png" alt="Vox Com logo">
 					</a>
 				</div>
-				<div class="col-5">
+				<div class="col-lg-5 col-sm-7 col-8">
 					<p class="copy">© 2017 "Вокс Комм" Все права защищены.<br> Использование любых материалов только с согласия Правообладателя</p>
 				</div>
-				<div class="col-4 footer__online">
+				<div class="col-lg-4 offset-lg-4 col-8 offset-sm-3 offset-4 footer__online">
 					<a href="mailto:info@vox-com.ru" class="mail">
 						<i class="fal fa-envelope-open"></i>
-						info@vox-com.ru
+						info@vox-com.ru 
 					</a>
 					<div class="soc">
 						<a href="#" class="fb">
@@ -952,7 +1058,7 @@
 			$preloader.delay(350).fadeOut("slow");
 		});
 	</script>
-	<script src="js/scripts.min.js?3"></script>
+	<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
