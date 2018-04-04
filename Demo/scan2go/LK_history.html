@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <title>История заказов</title>
+    <!--фавикон-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--фавикон-->
+    <script src="https://use.fontawesome.com/fab5ad8b64.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body class="LK lk_history">
+    <div class="wrapper">
+      <!--блок header __LK__ версия-->
+      <header class="header"> 
+        <div class="header__topLine"> 
+          <div class="header__container"> 
+            <div class="header__title">Сведения из Единого государственного реестра недвижимости (ЕГРН)
+            </div>
+            <div class="header__right"><a class="header__how" href="#">Как работает сервис</a><a class="header__questions" href="#">Ответы на вопросы</a><a class="header__view" href="#">Версия для слабовидящих</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__container">
+          <div class="header__bottomLine"><a class="header__logo" href="index.html"><img class="header__img" src="img/logo--main.png" alt="scan2go" title=""/></a>
+            <nav class="header__nav"> <a class="header__cabinet" href="#">blabla@verylooongmail.com</a><a class="header__data" href="LK_main.html">Мои данные</a>
+              <!--на кнопку "заказ услуг" привешен попап "заказ" -- класс .popup-modal и в href id окна, у соотвествующего окна должен быть этот id и класс .mfp-hide    --><a class="header__order popup-modal" href="#order">Заказ услуг</a><a class="header__history" href="LK_history.html">История заказов</a><a class="header__package" href="LK_paket.html">Пакетные предложения</a>
+            </nav>
+          </div>
+          <div class="header__enter"> 
+            <div class="header__balance">Баланс: <span class="header__count">0 выписок</span>
+            </div><a class="header__logout" href="#">Выход</a>
+          </div>
+        </div>
+      </header>
+      <!--конец блока header          -->
+      <div class="content">
+        <!--первая секция для страницы "пакетные предложения"-->
+        <section class="heroLK">
+          <div class="heroLK__container"> 
+            <h1 class="heroLK__title">История заказов
+            </h1>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция история в личном кабинете-->
+        <section class="history">
+          <div class="history__container">
+            <div class="history__main">
+              <h2 class="history__tit">Недавние действия
+              </h2>
+              <div class="history__topline"> 
+                <div class="history__filter">
+                  <div class="history__props"> 
+                    <div class="history__prop active">Все
+                    </div>
+                    <div class="history__prop">Оплата заказа
+                    </div>
+                    <div class="history__prop">Заявки
+                    </div>
+                    <div class="history__prop">Результат услуги
+                    </div>
+                  </div>
+                  <div class="history__date"> 
+                    <select class="history__months">
+                      <option class="history__month">Январь
+                      </option>
+                      <option class="history__month">Февраль
+                      </option>
+                      <option class="history__month">Март
+                      </option>
+                      <option class="history__month">Апрель
+                      </option>
+                      <option class="history__month">Май
+                      </option>
+                      <option class="history__month">Июнь
+                      </option>
+                      <option class="history__month">Июль
+                      </option>
+                      <option class="history__month">Август
+                      </option>
+                      <option class="history__month">Сентябрь
+                      </option>
+                      <option class="history__month">Октябрь
+                      </option>
+                      <option class="history__month">Ноябрь
+                      </option>
+                      <option class="history__month" selected="selected">Декабрь
+                      </option>
+                    </select>
+                    <select class="history__years">
+                      <option class="history__year">2015
+                      </option>
+                      <option class="history__year">2016
+                      </option>
+                      <option class="history__year" selected="selected">2017
+                      </option>
+                      <option class="history__year">2018
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="history__results">
+                <div class="history__result history__result--extract">
+                  <div class="history__message">
+                    <div class="history__type"><img class="history__icon history__icon--extract" src="img/icon--extract.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="history__content">
+                      <div class="history__date">18.12.2017
+                      </div>
+                      <div class="history__text">Создана выписка по адресу: Санкт-Петербург, ул. 11-я Красноармейская, 15а, кв. 7 (Выписка из ЕГРН об основных характеристиках и зарегистрированных правах)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history__attach"> 
+                    <div class="history__time">15:30:21  MSK
+                    </div>
+                    <div class="history__action history__action--extract"> <a class="history__link history__link--html" href="#" title="скачать">HTML</a><a class="history__link history__link--pdf" href="#" title="скачать">PDF</a><a class="history__link history__link--xml" href="#" title="скачать">XML</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="history__result history__result--extract">
+                  <div class="history__message">
+                    <div class="history__type"><img class="history__icon history__icon--extract" src="img/icon--extract.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="history__content">
+                      <div class="history__date">18.12.2017
+                      </div>
+                      <div class="history__text">Создана выписка по кадастровому номеру 78:32:0001664:1015 (Выписка из ЕГРН об основных характеристиках и зарегистрированных правах)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history__attach"> 
+                    <div class="history__time">13:14:57  MSK
+                    </div>
+                    <div class="history__action history__action--extract"> <a class="history__link history__link--html" href="#" title="скачать" download="download">HTML</a><a class="history__link history__link--pdf" href="#" title="скачать" download="download">PDF</a><a class="history__link history__link--xml" href="#" title="скачать" download="download">XML</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="history__result history__result--payment">
+                  <div class="history__message">
+                    <div class="history__type history__type--payment"><img class="history__icon history__icon--payment" src="img/icon--payment.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="history__content">
+                      <div class="history__date">17.12.2017
+                      </div>
+                      <div class="history__text">Оплачен заказ #1354-124 на сумму 500 рублей
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history__attach"> 
+                    <div class="history__time">12:31:27  MSK
+                    </div>
+                    <div class="history__action history__action--payment"> <a class="history__link history__link--print" href="#" title="распечатать">Распечатать чек</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="history__result history__result--buy">
+                  <div class="history__message">
+                    <div class="history__type history__type--buy"><img class="history__icon history__icon--buy" src="img/icon--buy.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="history__content">
+                      <div class="history__date">17.12.2017
+                      </div>
+                      <div class="history__text">Оформлена заявка на приобретение пакета «10 выписок» на сумму 500 рублей
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history__attach"> 
+                    <div class="history__time">12:31:27  MSK
+                    </div>
+                    <div class="history__action history__action--buy"> <a class="history__link history__link--repeat" href="#" title="повторить">Повторить заказ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__aside"> 
+              <h2 class="history__tit history__tit--acide">Доступно операций 
+              </h2>
+              <div class="history__count">5 
+              </div>
+              <button class="btn-blue btn-blue--small">Внести оплату 
+              </button>
+              <div class="attent-text attent-text--acide"> <i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                <div class="attent-text__text">Обратите внимание, что посмотреть ранее заказанные выписки можно даже при нулевом балансе.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции история-->
+      </div>
+    </div>
+    <!--блок footer-->
+    <footer class="footer"> 
+      <div class="footer__main"> 
+        <div class="footer__container">
+          <nav class="footer__nav footer__nav--main"> <a class="footer__logo" href="index.html" title=""><img class="footer__img" src="img/logo--footer.png" alt="scan to go" title=""/></a><a class="footer__link" href="index.html" title="">Главная страница</a><a class="footer__link" href="#" title="">О сервисе</a><a class="footer__link" href="#" title="">Пользовательское соглашение</a><a class="footer__link" href="#" title="">Политика конфиденциальности</a>
+          </nav>
+          <nav class="footer__nav footer__nav--middle"> <a class="footer__link" href="#" title="">Выписка из ЕГРН (ЕГРП)</a><a class="footer__link" href="#" title="">Кадастровая стоимость</a><a class="footer__link" href="#" title="">Пакетные предложения</a><a class="footer__link" href="#" title="">Как получить скидку?</a><a class="footer__link" href="#" title="">Ответы на вопросы</a>
+          </nav>
+          <nav class="footer__nav footer__nav--service">
+            <h2 class="footer__title"> Услуги сервиса
+            </h2><a class="footer__link" href="#" title="">Проверить «чистоту» квартиры, дома</a><a class="footer__link" href="kadastr_num.html" title="">Узнать кадастровый номер</a><a class="footer__link" href="kadastr_price.html" title="">Узнать кадастровую стоимость дома, квартиры, участка</a><a class="footer__link" href="#" title="">Рассчитать налог на имущество, земельный налог</a><a class="footer__link" href="#" title="">Проверить собственника квартиры</a><a class="footer__link" href="#" title="">Проверить на залог, арест имущества</a>
+          </nav>
+        </div>
+      </div>
+      <div class="bottomLine footer__bottomLine">
+        <div class="bottomLine__container">
+          <div class="bottomLine__copyright">Scan2Go.ru  Все права защищены
+          </div><a class="bottomLine__view" href="#" title="">Версия для слабовидящих</a>
+          <div class="bottomLine__support">Служба технической поддержки: <a class="bottomLine__mail" href="mailto:support@tscantogo.ru" title="Служба технической поддержки">support@tscantogo.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--конец блока footer-->
+    <div class="popup popup--order mfp-hide" id="order">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Оформление заказа 
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть<i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--order" action="#" method="post">
+          <div class="popup__info"> 
+            <div class="popup__text popup__text--strong">Адрес объекта:
+            </div>
+            <div class="popup__text">г.Санкт-Петербург, улица Циолковского, дом 10а
+            </div>
+            <div class="popup__text popup__text--strong">Кадастровый номер: 
+            </div>
+            <div class="popup__text">78:32:0001664:1015
+            </div><hr class="popup__hr"/>
+            <h3 class="popup__tit">Выберите тип документа
+            </h3>
+          </div>
+          <fieldset class="popup__inputs"> <input class="popup__egrn" type="checkbox" id="egrn" name="egrn" checked="checked"/>
+            <label class="popup__checkbox" for="egrn">Выписка ЕГРН 
+            </label>
+            <div class="popup__text popup__text--min">До 1 января 2017 года - выписка из ЕГРП, ГКН. Выписка об основных характеристиках и зарегистрированных правах на объект недвижимости.
+            </div><input class="popup__transfer" type="checkbox" id="transfer" name="transfer"/>
+            <label class="popup__checkbox" for="transfer">Выписка о переходе прав на объект недвижимости
+            </label>
+          </fieldset><hr class="popup__hr"/>
+          <fieldset class="popup__promo"> <input class="popup__input popup__input--code" type="text" name="code" placeholder="Введите промокод"/>
+            <div class="popup__price"> 
+              <div class="popup__text popup__text--cost">Стоимость <br>услуги:
+              </div>
+              <div class="popup__text popup__text--sum">59
+              </div>
+              <div class="popup__text popup__text--accent">От 5 выписок <br>цена до 25 руб.
+              </div>
+            </div>
+          </fieldset><hr class="popup__hr"/><input class="popup__agree" type="checkbox" id="hero__agree5" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree5">Нажимая кнопку «Оформить заказ», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn" type="submit" value="Оформить заказ и перейти к оплате"/>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup--register mfp-hide" id="register">     
+      <div class="popup__head"> 
+        <h2 class="popup__title">Регистрация на сайте 
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть<i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--register" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/><input class="popup__input popup__input--password" type="password" name="password" placeholder="Введите пароль" required="required"/>
+          <div class="popup__tip"> <i class="popup__icon popup__icon--red fa fa-info-circle" aria-hidden="true"></i>
+            <div class="popup__text popup__text--tip">(мин. 8 симв)
+            </div>
+          </div><input class="popup__input popup__input--confirm" type="password" name="confirm" placeholder="Повторите пароль" required="required"/>
+          <div class="popup__confirmed popup__confirmed--red"><i class="popup__icon popup__icon--red fa fa-times-circle" aria-hidden="true"> </i>
+            <div class="popup__text popup__text--subj">(не совпадают)
+            </div>
+          </div><input class="popup__agree" type="checkbox" id="hero__agree4" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree4">Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn popup__btn--blue" type="submit" value="Зарегистрироваться"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#auth" title="Авторизация">Я уже зарегистрирован </a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="auth">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Авторизация
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--auth" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/><input class="popup__input popup__input--password" type="password" name="password" placeholder="Введите пароль" required="required"/>
+          <div class="attent-text attent-text--red"><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+            <div class="attent-text__text">Неверный e-mail или пароль. Проверьте правильность ввода данных или используйте функция восстановления пароля.
+            </div>
+          </div><input class="popup__btn popup__btn--blue" type="submit" value="Зарегистрироваться"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#recovery" title="Восстановление">Восстановление пароля</a><a class="popup__link popup__link--center popup-modal" href="#register" title="Зарегистрироваться">Зарегистрироваться</a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="recovery">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Восстановление пароля
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--recovery" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/>
+          <div class="attent-text attent-text--red"><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+            <div class="attent-text__text">Такой e-mail адрес в нашей базе не зарегистрирован. Проверьте правильность ввода и попробуйте еще раз.
+            </div>
+          </div><input class="popup__btn popup__btn--blue" type="submit" value="Восстановить пароль"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#auth" title="Авторизация">Я все-таки вспомнил свой пароль</a><a class="popup__link popup__link--center popup-modal" href="#register" title="Зарегистрироваться">Зарегистрироваться</a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="oneclick">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Заказ в 1 клик
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--oneclick"> 
+          <select class="popup__select">
+            <option class="popup__service" selected="selected">Выписка из ЕГРН об основных характерист...
+            </option>
+            <option class="popup__service">Выписка из ЕГРН о переходе прав на объект...
+            </option>
+            <option class="popup__service">Выписка из ЕГРН о кадастровой стоимости
+            </option>
+          </select>
+          <div class="tabs hero__tabs">
+            <div class="tabs__controls">
+              <div class="tabs__tab tabs__tab--1 active">Адрес объекта
+              </div>
+              <div class="tabs__tab tabs__tab--2">Кадастровый номер
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__form tabs__form--adress active">
+                <fieldset class="tabs__inputs"><input class="tabs__sity" type="text" name="sity" placeholder="Населенный пункт"/><input class="tabs__street" type="text" name="street" placeholder="Название улицы"/><input class="tabs__house" type="text" name="house" placeholder="Номер дома"/><input class="tabs__room" type="text" name="room" placeholder="Квартира"/>
+                </fieldset>
+              </div>
+              <div class="tabs__form tabs__form--kadastr">
+                <fieldset class="tabs__inputNumbers"><input class="tabs__kNumber" type="text" name="kNumber" placeholder="Введите кадастровый номер" required="required"/>
+                  <div class="tabs__example">Например: 78:32:0001664:1015
+                  </div><a class="tabs__knowhow" href="#">Как узнать кадастровый номер?</a>
+                </fieldset>
+              </div>
+            </div>
+          </div><hr class="popup__hr"/>
+          <fieldset class="popup__promo"> <input class="popup__input popup__input--code" type="text" name="code" placeholder="Введите промокод"/>
+            <div class="popup__price"> 
+              <div class="popup__text popup__text--cost">Стоимость <br>услуги:
+              </div>
+              <div class="popup__text popup__text--sum">59
+              </div>
+              <div class="popup__text popup__text--accent">От 5 выписок <br>цена до 25 руб.
+              </div>
+            </div>
+          </fieldset><hr class="popup__hr"/><input class="popup__agree" type="checkbox" id="hero__agree3" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree3">Нажимая кнопку «Оформить заказ», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn" type="submit" value="Оформить заказ и перейти к оплате"/><a class="popup__link popup__link--center" href="#" title="Перейти">Перейти на страницу описания услуги</a>
+        </form>
+      </div>
+    </div>
+    <!--Боремся с устаревшими браузерами-->
+    <script src="https://yastatic.net/browser-updater/v1/script.js"></script>
+    <script>
+      var yaBrowserUpdater = new ya.browserUpdater.init({
+      	"lang": "ru"
+      	, "browsers": {
+      		"yabrowser": "15.10"
+      		, "chrome": "52"
+      		, "ie": "9"
+      		, "opera": "40"
+      		, "safari": "8"
+      		, "fx": "47"
+      		, "iron": "35"
+      		, "flock": "Infinity"
+      		, "palemoon": "25"
+      		, "camino": "Infinity"
+      		, "maxthon": "4.5"
+      		, "seamonkey": "2.3"
+      	}
+      	, "theme": "blue"
+      });
+    </script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

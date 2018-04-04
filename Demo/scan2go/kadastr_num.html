@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <title>Узнать кадастровый номер</title>
+    <!--фавикон-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--фавикон-->
+    <script src="https://use.fontawesome.com/fab5ad8b64.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body class="kadastr_num-page">
+    <div class="wrapper">
+      <!--блок header __index__ версия-->
+      <header class="header"> 
+        <div class="header__topLine"> 
+          <div class="header__container"> 
+            <div class="header__title">Сведения из Единого государственного реестра недвижимости (ЕГРН)
+            </div>
+            <div class="header__right"><a class="header__how" href="#">Как работает сервис</a><a class="header__questions" href="#">Ответы на вопросы</a><a class="header__view" href="#">Версия для слабовидящих</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__container">
+          <div class="header__bottomLine"><a class="header__logo" href="index.html"><img class="header__img" src="img/logo--main.png" alt="scan2go" title=""/></a>
+            <nav class="header__nav"> <a class="header__home" href="index.html"> </a><a class="header__service" href="#">Услуги сервиса</a><a class="header__package" href="#">Пакетные предложения</a><a class="header__sale" href="#">Как получить скидку?</a>
+              <!--на кнопку "личный кабинет" привешен попап "регистрация" -- класс .popup-modal и в href id окна, у соотвествующего окна должен быть этот id и класс .mfp-hide   --><a class="header__cabinet popup-modal" href="#register">Личный кабинет</a>
+            </nav>
+            <div class="dropdown dropdown--service">
+              <ul class="dropdown__items"> 
+                <li class="dropdown__item"> <a class="dropdown__link popup-modal" href="#oneclick" title="">Выписка из ЕГРН об основных характеристиках и зарегистрированных правах</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link popup-modal" href="#oneclick" title="">Выписка из ЕГРН о переходе прав на объект недвижимости</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link popup-modal" href="#oneclick" title="">Выписка из ЕГРН о кадастровой стоимости</a>
+                </li><li><hr class="dropdown__hr"/></li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Проверить «чистоту» квартиры, дома</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="kadastr_num.html" title="">Узнать кадастровый номер</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="kadastr_price.html" title="">Узнать кадастровую стоимость дома, квартиры, участка</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Рассчитать налог на имущество, земельный налог</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Проверить собственника квартиры</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Проверить на залог, арест имущества</a>
+                </li><li><hr class="dropdown__hr"/></li>
+                <li class="dropdown__item"> <a class="dropdown__link dropdown__link--new" href="#" title="">Оформить и скачать договор аренды недвижимости (NEW!)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--конец блока header          -->
+      <div class="content">
+        <!--первая секция страницы "кадастровый номер"-->
+        <section class="heroK"> 
+          <div class="heroK__container">
+            <div class="breadcrumbs"> <a class="breadcrumbs__crumb" href="/" title=" Главная">Главная </a><span class="breadcrumbs__crumb">Узнать кадастровый номер</span>
+            </div>
+            <div class="heroK__main"> 
+              <h1 class="heroK__title">Узнать кадастровый номер
+              </h1>
+              <div class="heroK__wrapinfo">
+                <div class="btn btn--blue">Адрес объекта
+                </div>
+                <form class="tabs__form tabs__form--adress active" action="" method="post">
+                  <fieldset class="tabs__inputs"><input class="tabs__sity" type="text" name="sity" placeholder="Населенный пункт" required="required"/><input class="tabs__street" type="text" name="street" placeholder="Название улицы" required="required"/><input class="tabs__house" type="text" name="house" placeholder="Номер дома" required="required"/><input class="tabs__room" type="text" name="room" placeholder="Квартира" required="required"/>
+                  </fieldset>
+                  <fieldset class="polit hero__polit"><input class="polit__agree" type="checkbox" id="hero__agree" name="agree" required="required" checked="checked"/>
+                    <label class="polit__checkbox" for="hero__agree">Нажимая кнопку «Получить выписку», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+                    </label>
+                  </fieldset><input class="btn" type="submit" value="Узнать кадастровый номер"/>
+                  <div class="label label--price">100
+                  </div>
+                </form>
+              </div>
+              <div class="heroK__descr"> 
+                <h2 class="heroK__tit">Как он выглядит и что обозначает:
+                </h2>
+                <div class="heroK__text">После того как необходимая информация была собрана, описанному объекту назначается идентификатор, который с момента постановки на учет служит основным признаком учтенной собственности.
+                </div>
+                <div class="heroK__text">В соответствии с постановлениями закона на территории РФ кадастровый номер объекта недвижимости выглядит так: <strong class="heroK__accent">AA:BB:CCDDEE:FF</strong>.
+                </div>
+                <div class="heroK__text">Двоеточиями разделены обозначения округа, района, квартала, затем идет цифровой код регистрируемого имущества.
+                </div>
+              </div>
+            </div>
+            <div class="heroK__dopinfo"> 
+              <div class="heroK__question">
+                <h2 class="heroK__tit heroK__tit--big">Когда кадастровый номер может измениться?
+                </h2>
+                <div class="heroK__text">Идентификационный код учтенной единицы может измениться при обстоятельствах, предусмотренных законодательством РФ.
+                </div>
+                <div class="heroK__text">В большинстве случаев необходимость изменения номера земельного участка появляется, если он при пересмотре административных границ оказывается в ведении другого округа или района. Уточнение или изменение границ, раздел или, наоборот, слияние с другим наделом также повлекут за собой перепостановку на учет, равно как и слияние или раздел помещений. Для дома, дачи, квартиры изменение такой характеристики, как этажность, также будет причиной изменения идентификатора.
+                </div>
+              </div>
+              <div class="heroK__notice"> 
+                <div class="heroK__text heroK__text--white">Во всех иных случаях <br>кадастровый номер объекта <br>недвижимости остается прежним, <br>согласно законодательным <br>постановлениям. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция "почему"-->
+        <section class="why"> 
+          <div class="why__container"> 
+            <h2 class="why__title">Почему надо заказывать именно у нас?
+            </h2>
+            <div class="why__items"> 
+              <div class="why__item"> 
+                <div class="why__num">3 <span class="why__small">вида</span>
+                </div>
+                <div class="why__text">файлов Вы получаете <br>на электронную почту:<br>PDF, HTML, XML
+                </div>
+              </div>
+              <div class="why__item"> 
+                <div class="why__num">10 <span class="why__small">мин.</span>
+                </div>
+                <div class="why__text">в среднем длится <br>ожидание получения<br>выписки
+                </div>
+              </div>
+              <div class="why__item"> 
+                <div class="why__num">40<span class="why__small">%</span>
+                </div>
+                <div class="why__text">размер скидки <br>на все Ваши <br>последущие заказы
+                </div>
+              </div>
+              <div class="why__item"> 
+                <div class="why__num">25 <span class="why__small">руб.</span>
+                </div>
+                <div class="why__text">минимальная стоимость <br>выписки на нашем <br>сервисе
+                </div>
+              </div>
+            </div>
+            <div class="why__banner"><img class="why__img" src="img/roslogo.png" alt="Росреестр" title=""/>
+              <div class="why__text"> 
+                <h2 class="why__tit">Всё – официально
+                </h2>
+                <div class="why__descr">Все данные предоставляются непосредственно Росреестром. Наш сервис осуществляет помощь в оперативной доставке информационных выписок на Вашу электронную почту.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции "почему"-->
+        <!--секция story-->
+        <section class="story"> 
+          <div class="story__container"> 
+            <h2 class="story__title">Кадастровый номер 
+            </h2>
+            <div class="story__textwrap">
+              <div class="story__column"> 
+                <div class="story__text">Все объекты недвижимости Российской Федерации находятся в едином для всей страны реестре, Государственном кадастре недвижимости, сведения которого с 01.01.2017 года вместе со сведениями о правах и обременениях на объекты недвижимости объединяются в ЕГРН (ссылка)
+                </div>
+              </div>
+              <div class="story__column story__column--border"> 
+                <div class="story__text">У каждой единицы, будь то земля, здание (любого назначения) или иное сооружение, есть такая характеристика, как регистрационный номер учтенной собственности, уникальный, единственный и неизменный.
+                </div>
+              </div>
+            </div>
+            <button class="btn">Узнать кадастровый номер
+            </button>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция article -->
+        <section class="article"> 
+          <div class="article__container"> 
+            <div class="article__content">
+              <h2 class="article__title">Как узнать кадастровый номер объекта недвижимости?
+              </h2>
+              <div class="article__text">В идеале все существующее имущество, такое как земли, дома и прочее, должно быть описано и внесено в реестр. В дальнейшем вся эта информация должна быть систематизирована и вынесена в общий доступ. Конечно, пока задача далека от завершения, однако можно уже сейчас убедиться, что есть постоянный и стабильный прогресс в достижении этой цели. Во всяком случае, найти утерянный или неизвестный номер собственности не является проблемой.
+              </div>
+              <div class="article__text"><strong class="article__text article__text--strong">Прежде всего, его можно найти в документах, удостоверяющих права собственности на участок, дом, квартиру.</strong>
+              </div>
+              <div class="article__text"> <a class="article__link" href="#" title="">Однако если документов на руках нет (украдены, испорчены)</a>, можно узнать кадастровый номер по адресу объекта недвижимости, обратившись в офис Федеральной службы госрегистрации лично, написав заявление о предоставлении нужной информации. Оглашение некоторых данных происходит на платной основе, по весьма скромной цене. Также можно отправить свой запрос по почте. Можно позвонить по телефону в учреждения, которые располагают данной информацией, назвать свои имя, фамилию и паспортные данные и задать все возникшие вопросы.
+              </div>
+              <div class="article__special"> 
+                <div class="article__text article__text--white">Специалисты службы регистрации помогут выяснить кадастровый номер по адресу объекта недвижимости. Даже если ничего не известно, кроме точного местонахождения или номера участка, они помогут найти искомый цифровой код. Если необходимо, предоставят и другую имеющуюся информацию о доме, квартире, участке. Более того, у работников офиса можно запросить данные и о незарегистрированных строениях или земельных наделах.
+                </div>
+              </div>
+              <div class="article__text">При наличии регистрационного кода сотрудники палаты осуществят поиск по кадастровому номеру объекта недвижимости необходимых сведений, включая государственную стоимость, информацию о владельце (например, если речь идет о заброшенном участке), точное местонахождение.
+              </div>
+              <div class="article__text">В зависимости от запроса, ответ можно получить в виде  <strong class="article__text article__text--strong">плана, выписки, справки.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция "полезная информация"-->
+        <section class="info"> 
+          <div class="info__container">
+            <div class="info__top">
+              <h2 class="info__title">Полезная информация о кадастровом учёте
+              </h2>
+              <button class="btn btn">Узнать кадастровый номер
+              </button>
+            </div>
+            <div class="info__tabs">   
+              <div class="info__controls"> 
+                <div class="info__tab active"> 
+                  <h2 class="info__subtitle">Внесение в кадастр земельного участка
+                  </h2>
+                </div>
+                <div class="info__tab"> 
+                  <h2 class="info__subtitle">Внесение в кадастр сооружения или здания
+                  </h2>
+                </div>
+                <div class="info__tab"> 
+                  <h2 class="info__subtitle">Внесение в кадастр квартиры, комнаты
+                  </h2>
+                </div>
+                <div class="info__tab"> 
+                  <h2 class="info__subtitle">Государственная (кадастровая) стоимость
+                  </h2>
+                </div>
+              </div>
+              <div class="info__content"> 
+                <div class="info__item active">
+                  <div class="info__textwrap">
+                    <div class="info__text">Для всех земельных угодий составляется подробное описание местоположения с привязкой к карте, указывается его площадь (округляется до метра), номера расположенных на участке других зарегистрированных объектов и некоторые иные характеристики.
+                    </div>
+                    <div class="info__text">Если новый объект регистрации образован путем слияния или разделения (например, при выделении долей) ранее существующих, то вписываются также их идентификационные номера (при выделении части дома в отдельное владение вносится цифровая информация о здании в целом).
+                    </div>
+                    <div class="info__text">Обязательно указываются категория земель (населённые пункты, сельскохозяйственные угодья, особо охраняемые природные территории, а также запасные, земли лесных и водных фондов) и наличие на описываемой территории лесных массивов и водоемов).
+                    </div>
+                  </div>
+                </div>
+                <div class="info__item"> 
+                  <div class="info__textwrap">
+                    <div class="info__text">Если на учет ставится сооружение, здание (достроенное или еще не подготовленное к эксплуатации), описывается, где именно оно расположено, измеряется его площадь, вносится кадастровый номер объекта недвижимости (конкретной территории, участка земли), в пределах которого оно находится.
+                    </div>
+                    <div class="info__text">Указываются идентификаторы, установленные для данной единицы ранее, а также точное или предполагаемое назначение здания. Если осмотр и описание производятся по причине расширения, раздела, иного переформирования сооружения, вписываются ранее установленные кадастровые номера исходных объектов.
+                    </div>
+                  </div>
+                  <div class="attent-text"> <i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                    <div class="attent-text__text">Если точный адрес единицы учета отсутствует, в число характеристик вносится подробное описание ее местоположения (субъект РФ, поселение, населенный пункт).
+                    </div>
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="info__textwrap"> 
+                    <div class="info__text"> <strong class="info__text info__text--strong">Если речь идет о квартире или комнате, ином отдельном помещении, то отличительными признаками являются точное определение вида (квартира это или комната), назначение (например, складское или жилое) и площадь.</strong>
+                    </div>
+                    <div class="info__text">При отдельной регистрации комнаты в характеристики вносится кадастровый номер объекта недвижимости, то есть квартиры, в которой она находится.
+                    </div>
+                    <div class="info__text">Для единиц учета любого вида и категорий, кроме вышеперечисленных характеристик, вносятся уточнения об имеющихся обременениях и ограничениях, а также другие важные сведения.
+                    </div>
+                  </div>
+                  <div class="attent-text"> <i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                    <div class="attent-text__text">Обязательно указывается точный адрес, учетный номер в кадастре того здания или сооружения, в котором находится описываемая единица. Если строение многоэтажное, уточняется этаж, а также то, где именно в пределах сооружения находится помещение.
+                    </div>
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="info__textwrap"> 
+                    <div class="info__text"> <strong class="info__text info__text--strong">При постановке на учет анализируется каждый объект для определения величины, которая иначе называется государственной ценой.</strong>
+                    </div>
+                    <div class="info__text">Каждые пять лет производится пересмотр полученной в результате суммы с целью приближения официальной стоимости к рыночной. От этого зависит размер выплачиваемого налога, и за последние несколько лет владельцы участков, жилья, строений стали платить почти в пять раз больше, чем раньше.
+                    </div>
+                    <div class="info__text">Эти данные являются гласными, и желающие могут выяснить для любого здания, дома, каждой зарегистрированной единицы такую характеристику, как кадастровая стоимость объекта недвижимости по кадастровому номеру, обратившись в офис службы госрегистрации.
+                    </div>
+                    <div class="info__text">Квартиры и иные жилые и нежилые помещения анализируются тоже по принципу уравнивания с запросами рынка, поэтому результаты могут быть неожиданными, особенно после подсчета предполагаемой суммы налога. Однако если она покажется владельцу собственности непомерно высокой, он может потребовать провести переоценку.
+                    </div>
+                  </div>
+                  <div class="attent-text"> <i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                    <div class="attent-text__text">Оценка земельных участков производится с учетом категории. При ее изменении, а также при расширении границ меняется и официальная стоимость.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info__about"> 
+              <h3 class="info__tit">Как происходит постановка на учет
+              </h3>
+              <div class="info__text">Сначала производится осмотр участка, дома или иного недвижимого имущества. Составляется подробное описание, где содержатся основные характеристики объекта, которые служат его отличительными признаками. 
+              </div>
+              <div class="info__columns">
+                <div class="info__column info__column--left"> 
+                  <div class="info__text info__text--strong">Это вид объекта:
+                  </div>
+                  <ul class="listitem"> 
+                    <li class="listitem__point">Земельный участок;
+                    </li>
+                    <li class="listitem__point">Квартира;
+                    </li>
+                    <li class="listitem__point">Капитальное сооружение;
+                    </li>
+                    <li class="listitem__point">Доля квартиры;
+                    </li>
+                    <li class="listitem__point">Завершенное или незавершенное здание;
+                    </li>
+                    <li class="listitem__point">Отдельные нежилые помещения.
+                    </li>
+                  </ul>
+                  <div class="info__text">А также ряд дополнительных особенностей, служащих для более точной идентификации.
+                  </div>
+                </div>
+                <div class="info__column info__column--right"> 
+                  <div class="info__text">Присвоение кадастрового номера объекту недвижимости и внесение его в реестр происходят после сбора всевозможной информации о нем. Стоит отметить, что любая сделка с неучтенной собственностью будет признана недействительной.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция "способы оплаты"-->
+        <section class="payment"> 
+          <div class="payment__container"> 
+            <h2 class="payment__title">Способы оплаты:
+            </h2>
+            <div class="payment__means"> 
+              <div class="payment__mean"> <img class="payment__img" src="img/visa.png" alt="visa" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/mastercard.png" alt="mastercard" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/sber.png" alt="sber" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/webmoney.png" alt="webmoney" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/qiwi.png" alt="qiwi" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/megafon.png" alt="megafon" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/mts.png" alt="mts" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/beeline.png" alt="beeline" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/tele2.png" alt="tele2" title=""/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции "способы оплаты"-->
+      </div>
+    </div>
+    <!--блок footer-->
+    <footer class="footer"> 
+      <div class="footer__main"> 
+        <div class="footer__container">
+          <nav class="footer__nav footer__nav--main"> <a class="footer__logo" href="index.html" title=""><img class="footer__img" src="img/logo--footer.png" alt="scan to go" title=""/></a><a class="footer__link" href="index.html" title="">Главная страница</a><a class="footer__link" href="#" title="">О сервисе</a><a class="footer__link" href="#" title="">Пользовательское соглашение</a><a class="footer__link" href="#" title="">Политика конфиденциальности</a>
+          </nav>
+          <nav class="footer__nav footer__nav--middle"> <a class="footer__link" href="#" title="">Выписка из ЕГРН (ЕГРП)</a><a class="footer__link" href="#" title="">Кадастровая стоимость</a><a class="footer__link" href="#" title="">Пакетные предложения</a><a class="footer__link" href="#" title="">Как получить скидку?</a><a class="footer__link" href="#" title="">Ответы на вопросы</a>
+          </nav>
+          <nav class="footer__nav footer__nav--service">
+            <h2 class="footer__title"> Услуги сервиса
+            </h2><a class="footer__link" href="#" title="">Проверить «чистоту» квартиры, дома</a><a class="footer__link" href="kadastr_num.html" title="">Узнать кадастровый номер</a><a class="footer__link" href="kadastr_price.html" title="">Узнать кадастровую стоимость дома, квартиры, участка</a><a class="footer__link" href="#" title="">Рассчитать налог на имущество, земельный налог</a><a class="footer__link" href="#" title="">Проверить собственника квартиры</a><a class="footer__link" href="#" title="">Проверить на залог, арест имущества</a>
+          </nav>
+        </div>
+      </div>
+      <div class="bottomLine footer__bottomLine">
+        <div class="bottomLine__container">
+          <div class="bottomLine__copyright">Scan2Go.ru  Все права защищены
+          </div><a class="bottomLine__view" href="#" title="">Версия для слабовидящих</a>
+          <div class="bottomLine__support">Служба технической поддержки: <a class="bottomLine__mail" href="mailto:support@tscantogo.ru" title="Служба технической поддержки">support@tscantogo.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--конец блока footer-->
+    <div class="popup popup--order mfp-hide" id="order">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Оформление заказа 
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть<i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--order" action="#" method="post">
+          <div class="popup__info"> 
+            <div class="popup__text popup__text--strong">Адрес объекта:
+            </div>
+            <div class="popup__text">г.Санкт-Петербург, улица Циолковского, дом 10а
+            </div>
+            <div class="popup__text popup__text--strong">Кадастровый номер: 
+            </div>
+            <div class="popup__text">78:32:0001664:1015
+            </div><hr class="popup__hr"/>
+            <h3 class="popup__tit">Выберите тип документа
+            </h3>
+          </div>
+          <fieldset class="popup__inputs"> <input class="popup__egrn" type="checkbox" id="egrn" name="egrn" checked="checked"/>
+            <label class="popup__checkbox" for="egrn">Выписка ЕГРН 
+            </label>
+            <div class="popup__text popup__text--min">До 1 января 2017 года - выписка из ЕГРП, ГКН. Выписка об основных характеристиках и зарегистрированных правах на объект недвижимости.
+            </div><input class="popup__transfer" type="checkbox" id="transfer" name="transfer"/>
+            <label class="popup__checkbox" for="transfer">Выписка о переходе прав на объект недвижимости
+            </label>
+          </fieldset><hr class="popup__hr"/>
+          <fieldset class="popup__promo"> <input class="popup__input popup__input--code" type="text" name="code" placeholder="Введите промокод"/>
+            <div class="popup__price"> 
+              <div class="popup__text popup__text--cost">Стоимость <br>услуги:
+              </div>
+              <div class="popup__text popup__text--sum">59
+              </div>
+              <div class="popup__text popup__text--accent">От 5 выписок <br>цена до 25 руб.
+              </div>
+            </div>
+          </fieldset><hr class="popup__hr"/><input class="popup__agree" type="checkbox" id="hero__agree5" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree5">Нажимая кнопку «Оформить заказ», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn" type="submit" value="Оформить заказ и перейти к оплате"/>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup--register mfp-hide" id="register">     
+      <div class="popup__head"> 
+        <h2 class="popup__title">Регистрация на сайте 
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть<i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--register" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/><input class="popup__input popup__input--password" type="password" name="password" placeholder="Введите пароль" required="required"/>
+          <div class="popup__tip"> <i class="popup__icon popup__icon--red fa fa-info-circle" aria-hidden="true"></i>
+            <div class="popup__text popup__text--tip">(мин. 8 симв)
+            </div>
+          </div><input class="popup__input popup__input--confirm" type="password" name="confirm" placeholder="Повторите пароль" required="required"/>
+          <div class="popup__confirmed popup__confirmed--red"><i class="popup__icon popup__icon--red fa fa-times-circle" aria-hidden="true"> </i>
+            <div class="popup__text popup__text--subj">(не совпадают)
+            </div>
+          </div><input class="popup__agree" type="checkbox" id="hero__agree4" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree4">Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn popup__btn--blue" type="submit" value="Зарегистрироваться"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#auth" title="Авторизация">Я уже зарегистрирован </a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="auth">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Авторизация
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--auth" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/><input class="popup__input popup__input--password" type="password" name="password" placeholder="Введите пароль" required="required"/>
+          <div class="attent-text attent-text--red"><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+            <div class="attent-text__text">Неверный e-mail или пароль. Проверьте правильность ввода данных или используйте функция восстановления пароля.
+            </div>
+          </div><input class="popup__btn popup__btn--blue" type="submit" value="Зарегистрироваться"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#recovery" title="Восстановление">Восстановление пароля</a><a class="popup__link popup__link--center popup-modal" href="#register" title="Зарегистрироваться">Зарегистрироваться</a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="recovery">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Восстановление пароля
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--recovery" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/>
+          <div class="attent-text attent-text--red"><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+            <div class="attent-text__text">Такой e-mail адрес в нашей базе не зарегистрирован. Проверьте правильность ввода и попробуйте еще раз.
+            </div>
+          </div><input class="popup__btn popup__btn--blue" type="submit" value="Восстановить пароль"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#auth" title="Авторизация">Я все-таки вспомнил свой пароль</a><a class="popup__link popup__link--center popup-modal" href="#register" title="Зарегистрироваться">Зарегистрироваться</a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="oneclick">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Заказ в 1 клик
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--oneclick"> 
+          <select class="popup__select">
+            <option class="popup__service" selected="selected">Выписка из ЕГРН об основных характерист...
+            </option>
+            <option class="popup__service">Выписка из ЕГРН о переходе прав на объект...
+            </option>
+            <option class="popup__service">Выписка из ЕГРН о кадастровой стоимости
+            </option>
+          </select>
+          <div class="tabs hero__tabs">
+            <div class="tabs__controls">
+              <div class="tabs__tab tabs__tab--1 active">Адрес объекта
+              </div>
+              <div class="tabs__tab tabs__tab--2">Кадастровый номер
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__form tabs__form--adress active">
+                <fieldset class="tabs__inputs"><input class="tabs__sity" type="text" name="sity" placeholder="Населенный пункт"/><input class="tabs__street" type="text" name="street" placeholder="Название улицы"/><input class="tabs__house" type="text" name="house" placeholder="Номер дома"/><input class="tabs__room" type="text" name="room" placeholder="Квартира"/>
+                </fieldset>
+              </div>
+              <div class="tabs__form tabs__form--kadastr">
+                <fieldset class="tabs__inputNumbers"><input class="tabs__kNumber" type="text" name="kNumber" placeholder="Введите кадастровый номер" required="required"/>
+                  <div class="tabs__example">Например: 78:32:0001664:1015
+                  </div><a class="tabs__knowhow" href="#">Как узнать кадастровый номер?</a>
+                </fieldset>
+              </div>
+            </div>
+          </div><hr class="popup__hr"/>
+          <fieldset class="popup__promo"> <input class="popup__input popup__input--code" type="text" name="code" placeholder="Введите промокод"/>
+            <div class="popup__price"> 
+              <div class="popup__text popup__text--cost">Стоимость <br>услуги:
+              </div>
+              <div class="popup__text popup__text--sum">59
+              </div>
+              <div class="popup__text popup__text--accent">От 5 выписок <br>цена до 25 руб.
+              </div>
+            </div>
+          </fieldset><hr class="popup__hr"/><input class="popup__agree" type="checkbox" id="hero__agree3" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree3">Нажимая кнопку «Оформить заказ», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn" type="submit" value="Оформить заказ и перейти к оплате"/><a class="popup__link popup__link--center" href="#" title="Перейти">Перейти на страницу описания услуги</a>
+        </form>
+      </div>
+    </div>
+    <!--Боремся с устаревшими браузерами-->
+    <script src="https://yastatic.net/browser-updater/v1/script.js"></script>
+    <script>
+      var yaBrowserUpdater = new ya.browserUpdater.init({
+      	"lang": "ru"
+      	, "browsers": {
+      		"yabrowser": "15.10"
+      		, "chrome": "52"
+      		, "ie": "9"
+      		, "opera": "40"
+      		, "safari": "8"
+      		, "fx": "47"
+      		, "iron": "35"
+      		, "flock": "Infinity"
+      		, "palemoon": "25"
+      		, "camino": "Infinity"
+      		, "maxthon": "4.5"
+      		, "seamonkey": "2.3"
+      	}
+      	, "theme": "blue"
+      });
+    </script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

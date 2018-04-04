@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <title>Заказ получения выписки из Росреестра (ЕГРН)</title>
+    <!--фавикон-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--фавикон-->
+    <script src="https://use.fontawesome.com/fab5ad8b64.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body class="ergn-page">
+    <div class="wrapper">
+      <!--блок header __index__ версия-->
+      <header class="header"> 
+        <div class="header__topLine"> 
+          <div class="header__container"> 
+            <div class="header__title">Сведения из Единого государственного реестра недвижимости (ЕГРН)
+            </div>
+            <div class="header__right"><a class="header__how" href="#">Как работает сервис</a><a class="header__questions" href="#">Ответы на вопросы</a><a class="header__view" href="#">Версия для слабовидящих</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__container">
+          <div class="header__bottomLine"><a class="header__logo" href="index.html"><img class="header__img" src="img/logo--main.png" alt="scan2go" title=""/></a>
+            <nav class="header__nav"> <a class="header__home" href="index.html"> </a><a class="header__service" href="#">Услуги сервиса</a><a class="header__package" href="#">Пакетные предложения</a><a class="header__sale" href="#">Как получить скидку?</a>
+              <!--на кнопку "личный кабинет" привешен попап "регистрация" -- класс .popup-modal и в href id окна, у соотвествующего окна должен быть этот id и класс .mfp-hide   --><a class="header__cabinet popup-modal" href="#register">Личный кабинет</a>
+            </nav>
+            <div class="dropdown dropdown--service">
+              <ul class="dropdown__items"> 
+                <li class="dropdown__item"> <a class="dropdown__link popup-modal" href="#oneclick" title="">Выписка из ЕГРН об основных характеристиках и зарегистрированных правах</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link popup-modal" href="#oneclick" title="">Выписка из ЕГРН о переходе прав на объект недвижимости</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link popup-modal" href="#oneclick" title="">Выписка из ЕГРН о кадастровой стоимости</a>
+                </li><li><hr class="dropdown__hr"/></li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Проверить «чистоту» квартиры, дома</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="kadastr_num.html" title="">Узнать кадастровый номер</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="kadastr_price.html" title="">Узнать кадастровую стоимость дома, квартиры, участка</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Рассчитать налог на имущество, земельный налог</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Проверить собственника квартиры</a>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#" title="">Проверить на залог, арест имущества</a>
+                </li><li><hr class="dropdown__hr"/></li>
+                <li class="dropdown__item"> <a class="dropdown__link dropdown__link--new" href="#" title="">Оформить и скачать договор аренды недвижимости (NEW!)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--конец блока header          -->
+      <div class="content">
+        <!--первая секция страницы "ЕГРН"-->
+        <section class="heroK heroK--ergn"> 
+          <div class="heroK__container">
+            <div class="breadcrumbs"> <a class="breadcrumbs__crumb" href="/" title=" Главная">Главная </a><span class="breadcrumbs__crumb">Заказ получения выписки из Росреестра (ЕГРН)</span>
+            </div>
+            <div class="heroK__main"> 
+              <h1 class="heroK__title">Заказ получения выписки из Росреестра (ЕГРН)
+              </h1>
+              <div class="heroK__wrapinfo">
+                <div class="tabs hero__tabs">
+                  <div class="tabs__controls tabs__controls--ergn">
+                    <div class="tabs__tab tabs__tab--1 active">Адрес объекта
+                    </div>
+                    <div class="tabs__tab tabs__tab--2">Кадастровый номер
+                    </div>
+                  </div>
+                  <div class="tabs__content">
+                    <form class="tabs__form tabs__form--adress active" action="" method="post">
+                      <fieldset class="tabs__inputs"><input class="tabs__sity" type="text" name="sity" placeholder="Населенный пункт" required="required"/><input class="tabs__street" type="text" name="street" placeholder="Название улицы" required="required"/><input class="tabs__house" type="text" name="house" placeholder="Номер дома" required="required"/><input class="tabs__room" type="text" name="room" placeholder="Квартира" required="required"/>
+                      </fieldset>
+                      <fieldset class="polit hero__polit"><input class="polit__agree" type="checkbox" id="hero__agree1" name="agree" required="required" checked="checked"/>
+                        <label class="polit__checkbox" for="hero__agree1">Нажимая кнопку «Получить выписку», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+                        </label>
+                      </fieldset><input class="btn" type="submit" value="Узнать кадастровый номер"/>
+                    </form>
+                    <form class="tabs__form tabs__form--kadastr" action="" method="post">
+                      <fieldset class="tabs__inputNumbers"><input class="tabs__kNumber" type="text" name="kNumber" placeholder="Введите кадастровый номер" required="required"/>
+                        <div class="tabs__example">Например: 78:32:0001664:1015
+                        </div><a class="tabs__knowhow" href="#">Как узнать кадастровый номер?</a>
+                      </fieldset>
+                      <fieldset class="polit hero__polit"><input class="polit__agree" type="checkbox" id="agree" name="agree" required="required" checked="checked"/>
+                        <label class="polit__checkbox" for="agree">Нажимая кнопку «Получить выписку», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+                        </label>
+                      </fieldset><input class="tabs__btn btn" type="submit" value="Получить выписку"/>
+                      <div class="tabs__attention">
+                        <div class="tabs__text">При заказе <span class="tabs__accent">пакетного </span>предложения цена <span class="tabs__accent">от 25 руб.</span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="label label--price">59
+                  </div>
+                </div>
+              </div>
+              <div class="heroK__descr heroK__descr--ergn"> 
+                <div class="offer"> 
+                  <div class="offer__text"> <strong class="offer__text offer__text--strong">От 5 выписок </strong>— цена <strong class="offer__text offer__text--strong">до 25 руб.</strong>
+                  </div>
+                </div>
+                <h4 class="heroK__tit">Содержание выписки из ЕГРН: <i class="heroK__icon fa fa-info-circle" aria-hidden="true"></i>
+                  <div class="tips tips--bottom">
+                    <div class="tips__text">Выписка из ЕГРН позволяет получить наиболее полную информацию о недвижимости и ее владельцах, обременениях в силу закона или договора или даже о наложенном аресте.
+                    </div>
+                  </div>
+                </h4>
+                <div class="heroK__text">Есть несколько видов выписок, различающихся по объему представленной в них информации, однако, почти во всех из них содержатся следующие сведения:
+                </div>
+                <div class="twocol">
+                  <ul class="dashlist dashlist--ergn"> 
+                    <li class="dashlist__text">Ф. И. О. всех владельцев имущества;
+                    </li>
+                    <li class="dashlist__text">Форма собственности;
+                    </li>
+                    <li class="dashlist__text">Дата оформления прав на объект;
+                    </li>
+                    <li class="dashlist__text">Обременения, ограничения и аресты;
+                    </li>
+                    <li class="dashlist__text">Кадастровые данные;
+                    </li>
+                  </ul>
+                  <ul class="dashlist dashlist--ergn"> 
+                    <li class="dashlist__text">Государственную стоимость имущества;
+                    </li>
+                    <li class="dashlist__text">Полную характеристику недвижимости (с этажностью и размерами);
+                    </li>
+                    <li class="dashlist__text">План-чертеж объекта;
+                    </li>
+                    <li class="dashlist__text">Сведения о заказчике.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="heroK__dopinfo heroK__dopinfo--ergn"> 
+              <div class="heroK__question heroK__question--ergn">
+                <h2 class="heroK__tit heroK__tit--verybig">Для чего нужна выписка?
+                </h2><strong class="heroK__text heroK__text--strong">Для проведения любых значимых сделок/операций с недвижимостью: </strong>
+                <div class="twocol">
+                  <ul class="dashlist dashlist--ergn"> 
+                    <li class="dashlist__text">дарение недвижимости;
+                    </li>
+                    <li class="dashlist__text">передачу по наследству;
+                    </li>
+                    <li class="dashlist__text">покупку;
+                    </li>
+                    <li class="dashlist__text">продажу;
+                    </li>
+                    <li class="dashlist__text">обмен недвижимости;
+                    </li>
+                  </ul>
+                  <ul class="dashlist dashlist--ergn"> 
+                    <li class="dashlist__text">сдачу в аренду;
+                    </li>
+                    <li class="dashlist__text">оформление кредита под залог;
+                    </li>
+                    <li class="dashlist__text">регистрация ипотеки в силу закона или договора;
+                    </li>
+                    <li class="dashlist__text">снятие обременений.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="heroK__notice heroK__notice--erng">
+                <div class="heroK__text heroK__text--white">Кроме того, современные выписки ЕГРН - это еще и документы, удостоверяющие права собственности на имущество. С 01.01.2017 года свидетельств о праве собственности не выдается! 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция "почему"-->
+        <section class="why"> 
+          <div class="why__container"> 
+            <h2 class="why__title">Почему надо заказывать именно у нас?
+            </h2>
+            <div class="why__items"> 
+              <div class="why__item"> 
+                <div class="why__num">3 <span class="why__small">вида</span>
+                </div>
+                <div class="why__text">файлов Вы получаете <br>на электронную почту:<br>PDF, HTML, XML
+                </div>
+              </div>
+              <div class="why__item"> 
+                <div class="why__num">10 <span class="why__small">мин.</span>
+                </div>
+                <div class="why__text">в среднем длится <br>ожидание получения<br>выписки
+                </div>
+              </div>
+              <div class="why__item"> 
+                <div class="why__num">40<span class="why__small">%</span>
+                </div>
+                <div class="why__text">размер скидки <br>на все Ваши <br>последущие заказы
+                </div>
+              </div>
+              <div class="why__item"> 
+                <div class="why__num">25 <span class="why__small">руб.</span>
+                </div>
+                <div class="why__text">минимальная стоимость <br>выписки на нашем <br>сервисе
+                </div>
+              </div>
+            </div>
+            <div class="why__banner"><img class="why__img" src="img/roslogo.png" alt="Росреестр" title=""/>
+              <div class="why__text"> 
+                <h2 class="why__tit">Всё – официально
+                </h2>
+                <div class="why__descr">Все данные предоставляются непосредственно Росреестром. Наш сервис осуществляет помощь в оперативной доставке информационных выписок на Вашу электронную почту.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции "почему"-->
+        <!--секция story-->
+        <section class="story"> 
+          <div class="story__container"> 
+            <h2 class="story__title">Выписка из ЕГРН (ЕГРП)
+            </h2>
+            <div class="story__textwrap story__textwrap--ergn">
+              <div class="story__column"> 
+                <div class="story__text">Все сведения об объектах недвижимости хранятся в Едином Государственном Реестре Недвижимости (ЕГРН). 
+                </div>
+                <div class="story__text">Ранее информация хранилась в Едином Государственном Реестре Прав и Государственном Кадастре Недвижимости (ГКН), но с 01.01.2017 года в соответствии с в соответствии с Федеральным законом РФ от 13 июля 2015 года № 218-ФЗ «О государственной регистрации недвижимости» ЕГРП и ГКН подлежат объединению в ЕГРН.
+                </div>
+              </div>
+              <div class="story__column story__column--border"> 
+                <div class="story__text">Сведения, содержащиеся в ЕГРН носят открытый характер и могут быть получены любым юридическим или физическим лицом в установленном порядке (в настоящее время на платной основе).
+                </div><strong class="story__text story__text--strong">Таким образом, сейчас выдается только выписка из ЕГРН и никакая иная. Ведет ЕГРН уполномоченная на то законом Служба государственной регистрации «Росреестр».</strong>
+              </div>
+            </div>
+            <button class="btn">Получить выписку
+            </button>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция "полезная информация"-->
+        <section class="info info--ergn">
+          <div class="info__container">
+            <div class="info__top">
+              <h2 class="info__title">Полезная информация о выписках ЕГРН
+              </h2>
+            </div>
+            <div class="info__tabs">   
+              <div class="info__controls"> 
+                <div class="info__tab active"> 
+                  <h2 class="info__subtitle">Что такое недвижимость?
+                  </h2>
+                </div>
+                <div class="info__tab"> 
+                  <h2 class="info__subtitle">Формы представления выписок ЕГРН
+                  </h2>
+                </div>
+                <div class="info__tab"> 
+                  <h2 class="info__subtitle">Где брать выписки ЕГРН?
+                  </h2>
+                </div>
+                <div class="info__tab"> 
+                  <h2 class="info__subtitle">Стоимость выписки ЕГРН
+                  </h2>
+                </div>
+              </div>
+              <div class="info__content info__content--ergn"> 
+                <div class="info__item info__item--ergn active">
+                  <div class="info__textwrap">
+                    <div class="info__text"> <strong class="info__text info__text--strong">К недвижимости по происхождению </strong>относятся земельные участки, участки недр и все, что прочно связано с землей, то есть объекты, перемещение которых без несоразмерного ущерба их назначению невозможно, в том числе здания, сооружения, объекты незавершённого строительства (недвижимость по происхождению)
+                    </div>
+                    <div class="info__text info__text--pb">Кроме недвижимости по происхождению, в России существует<strong class="info__text info__text--strong">«недвижимость по закону». </strong>К ней относят подлежащие государственной регистрации воздушные и морские суда, суда внутреннего плавания, космические объекты.
+                    </div>
+                    <h3 class="info__tit">В повседневном смысле к недвижимости относятся:
+                    </h3>
+                    <div class="twocol twocol--ergn">
+                      <ul class="listitem listitem--ergn"> 
+                        <li class="listitem__point listitem__point--ergn">Здания и их части;
+                        </li>
+                        <li class="listitem__point listitem__point--ergn">Земельные участки;
+                        </li>
+                        <li class="listitem__point listitem__point--ergn">Квартиры;
+                        </li>
+                        <li class="listitem__point listitem__point--ergn">Комнаты в общежитии;
+                        </li>
+                      </ul>
+                      <ul class="listitem listitem--ergn"> 
+                        <li class="listitem__point listitem__point--ergn">Гаражи и места под парковку машин;
+                        </li>
+                        <li class="listitem__point listitem__point--ergn">Нежилые помещения;
+                        </li>
+                        <li class="listitem__point listitem__point--ergn">Объекты незавершенного строительства.
+                        </li>
+                      </ul>
+                    </div><strong class="info__text info__text--strong">Доли в перечисленном имуществе тоже считаются недвижимостью!</strong>
+                  </div>
+                  <div class="attent-text"> <i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                    <div class="attent-text__text">Недвижимость может являться предметом лизинга. Залог недвижимости, равно как и получение кредита под залог недвижимости принято называть ипотекой.
+                    </div>
+                  </div>
+                </div>
+                <div class="info__item info__item--ergn"> 
+                  <div class="info__textwrap"><strong class="info__text info__text--strong">Различают его бумажную и электронную форму. </strong>
+                    <div class="info__text">В первом случае документ будет распечатан на обычных листах. 
+                    </div>
+                    <div class="info__text info__text--pb">Во втором используется электронный файл, который открывается на компьютере, а также файл, подписанный при помощи ЭЦП (это электронный документ, имеющий силу бумажного с подписью и печатью на основании принятого 06 апреля 2011 года Федерального Закона № 63-ФЗ «Об электронной подписи»)
+                    </div>
+                    <h3 class="info__tit">Образцы выписок
+                    </h3>
+                    <div class="info__twocol twocol twocol--sample">
+                      <div class="info__features">
+                        <div class="info__feature"> <a class="info__image-zoom" href="img/samples-01--full.jpg" title="Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости"><img class="info__img" src="img/samples-01--min.jpg" alt="Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости" title=""/></a>
+                        </div>
+                        <div class="info__feature"> <a class="info__image-zoom" href="img/samples-02--full.jpg" title="Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости"><img class="info__img" src="img/samples-02--min.jpg" alt="Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости" title=""/></a>
+                        </div>
+                        <div class="info__feature"> <a class="info__image-zoom" href="img/samples-03--full.jpg" title="Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости"><img class="info__img" src="img/samples-03--min.jpg" alt="Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости" title=""/></a>
+                        </div>
+                      </div>
+                      <div class="info__column"> 
+                        <div class="info__text">Все электронные выписки носят информационный характер. 
+                        </div>
+                        <div class="info__text">Для предоставления в государственные и иные службы, Вам потребуется бумажный оригинал с синей печатью.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="attent-text"> <i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                    <div class="attent-text__text">Стоит обратить внимание на то, что бумажная выписка стоит дороже электронной. 
+                    </div>
+                  </div>
+                </div>
+                <div class="info__item info__item--ergn">
+                  <div class="info__textwrap"> 
+                    <div class="info__text info__text--pb">Выписка из ЕГРН на земельный участок или любую другую недвижимую собственность оформляется за<br> несколько минут. Главное, знать, куда обращаться.
+                    </div>
+                    <h3 class="info__tit">Сегодня на территории РФ можно оформить такую справку:
+                    </h3>
+                    <div class="twocol twocol--min">
+                      <ul class="listitem listitem--ergn"> 
+                        <li class="listitem__point listitem__point--long">Через Росреестр;
+                        </li>
+                        <li class="listitem__point listitem__point--long">На Почте России;
+                        </li>
+                        <li class="listitem__point listitem__point--long">В МФЦ;
+                        </li>
+                      </ul>
+                      <ul class="listitem listitem--ergn"> 
+                        <li class="listitem__point listitem__point--long">Через кадастровые регистрационные палаты;
+                        </li>
+                        <li class="listitem__point listitem__point--long">Специализированные сервисы в сети Интернет.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="info__logos"> 
+                      <div class="info__logo"><img class="info__img" src="img/roslogo.png" alt="Росреестр" title=""/>
+                      </div>
+                      <div class="info__logo"><img class="info__img" src="img/pochta.png" alt="Почта России" title=""/>
+                      </div>
+                      <div class="info__logo"><img class="info__img" src="img/mydoc.png" alt="Мои документы" title=""/>
+                      </div>
+                      <div class="info__logo"><img class="info__img" src="img/logo--main.png" alt="ScanToGo" title=""/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__item info__item--ergn"> 
+                  <div class="info__textwrap"> 
+                    <div class="info__text info__text--pb">Выписка из ЕГРН, несмотря на открытый характер предоставляемых сведений, оформляется <strong class="info__text info__text--strong">не бесплатно. </strong>
+                      <h3 class="info__tit">Цена ее зависит от многих факторов:
+                      </h3>
+                      <ul class="listitem listitem--ergn"> 
+                        <li class="listitem__point listitem__point--long">Кто является заявителем <br>(физическое или юридическое лицо);
+                        </li>
+                        <li class="listitem__point listitem__point--long">Форма предоставления сведений <br>(на бумажном носителе или в электронном виде);
+                        </li>
+                        <li class="listitem__point listitem__point--long">Объем запрашиваемых сведений.
+                        </li>
+                      </ul>
+                      <h3 class="info__tit info__tit--big">Покупать пакетом – выгоднее:
+                      </h3>
+                      <div class="offer offer--center"> 
+                        <div class="offer__text"> <strong class="offer__text offer__text--strong">От 5 выписок </strong>— цена <strong class="offer__text offer__text--strong">до 25 руб.</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="attent-text attent-text--label">
+                    <div class="label label--top">59
+                    </div><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+                    <div class="attent-text__text">Стоимость услуг на нашем сайте зависит от числа приобретаемых выписок и от периода, в течение которого можно воспользоваться приобретеленными выписками.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции-->
+        <!--секция "способы оплаты"-->
+        <section class="payment"> 
+          <div class="payment__container"> 
+            <h2 class="payment__title">Способы оплаты:
+            </h2>
+            <div class="payment__means"> 
+              <div class="payment__mean"> <img class="payment__img" src="img/visa.png" alt="visa" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/mastercard.png" alt="mastercard" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/sber.png" alt="sber" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/webmoney.png" alt="webmoney" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/qiwi.png" alt="qiwi" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/megafon.png" alt="megafon" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/mts.png" alt="mts" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/beeline.png" alt="beeline" title=""/>
+              </div>
+              <div class="payment__mean"> <img class="payment__img" src="img/tele2.png" alt="tele2" title=""/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--конец секции "способы оплаты"-->
+      </div>
+    </div>
+    <!--блок footer-->
+    <footer class="footer"> 
+      <div class="footer__main"> 
+        <div class="footer__container">
+          <nav class="footer__nav footer__nav--main"> <a class="footer__logo" href="index.html" title=""><img class="footer__img" src="img/logo--footer.png" alt="scan to go" title=""/></a><a class="footer__link" href="index.html" title="">Главная страница</a><a class="footer__link" href="#" title="">О сервисе</a><a class="footer__link" href="#" title="">Пользовательское соглашение</a><a class="footer__link" href="#" title="">Политика конфиденциальности</a>
+          </nav>
+          <nav class="footer__nav footer__nav--middle"> <a class="footer__link" href="#" title="">Выписка из ЕГРН (ЕГРП)</a><a class="footer__link" href="#" title="">Кадастровая стоимость</a><a class="footer__link" href="#" title="">Пакетные предложения</a><a class="footer__link" href="#" title="">Как получить скидку?</a><a class="footer__link" href="#" title="">Ответы на вопросы</a>
+          </nav>
+          <nav class="footer__nav footer__nav--service">
+            <h2 class="footer__title"> Услуги сервиса
+            </h2><a class="footer__link" href="#" title="">Проверить «чистоту» квартиры, дома</a><a class="footer__link" href="kadastr_num.html" title="">Узнать кадастровый номер</a><a class="footer__link" href="kadastr_price.html" title="">Узнать кадастровую стоимость дома, квартиры, участка</a><a class="footer__link" href="#" title="">Рассчитать налог на имущество, земельный налог</a><a class="footer__link" href="#" title="">Проверить собственника квартиры</a><a class="footer__link" href="#" title="">Проверить на залог, арест имущества</a>
+          </nav>
+        </div>
+      </div>
+      <div class="bottomLine footer__bottomLine">
+        <div class="bottomLine__container">
+          <div class="bottomLine__copyright">Scan2Go.ru  Все права защищены
+          </div><a class="bottomLine__view" href="#" title="">Версия для слабовидящих</a>
+          <div class="bottomLine__support">Служба технической поддержки: <a class="bottomLine__mail" href="mailto:support@tscantogo.ru" title="Служба технической поддержки">support@tscantogo.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--конец блока footer-->
+    <div class="popup popup--order mfp-hide" id="order">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Оформление заказа 
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть<i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--order" action="#" method="post">
+          <div class="popup__info"> 
+            <div class="popup__text popup__text--strong">Адрес объекта:
+            </div>
+            <div class="popup__text">г.Санкт-Петербург, улица Циолковского, дом 10а
+            </div>
+            <div class="popup__text popup__text--strong">Кадастровый номер: 
+            </div>
+            <div class="popup__text">78:32:0001664:1015
+            </div><hr class="popup__hr"/>
+            <h3 class="popup__tit">Выберите тип документа
+            </h3>
+          </div>
+          <fieldset class="popup__inputs"> <input class="popup__egrn" type="checkbox" id="egrn" name="egrn" checked="checked"/>
+            <label class="popup__checkbox" for="egrn">Выписка ЕГРН 
+            </label>
+            <div class="popup__text popup__text--min">До 1 января 2017 года - выписка из ЕГРП, ГКН. Выписка об основных характеристиках и зарегистрированных правах на объект недвижимости.
+            </div><input class="popup__transfer" type="checkbox" id="transfer" name="transfer"/>
+            <label class="popup__checkbox" for="transfer">Выписка о переходе прав на объект недвижимости
+            </label>
+          </fieldset><hr class="popup__hr"/>
+          <fieldset class="popup__promo"> <input class="popup__input popup__input--code" type="text" name="code" placeholder="Введите промокод"/>
+            <div class="popup__price"> 
+              <div class="popup__text popup__text--cost">Стоимость <br>услуги:
+              </div>
+              <div class="popup__text popup__text--sum">59
+              </div>
+              <div class="popup__text popup__text--accent">От 5 выписок <br>цена до 25 руб.
+              </div>
+            </div>
+          </fieldset><hr class="popup__hr"/><input class="popup__agree" type="checkbox" id="hero__agree5" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree5">Нажимая кнопку «Оформить заказ», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn" type="submit" value="Оформить заказ и перейти к оплате"/>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup--register mfp-hide" id="register">     
+      <div class="popup__head"> 
+        <h2 class="popup__title">Регистрация на сайте 
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть<i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--register" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/><input class="popup__input popup__input--password" type="password" name="password" placeholder="Введите пароль" required="required"/>
+          <div class="popup__tip"> <i class="popup__icon popup__icon--red fa fa-info-circle" aria-hidden="true"></i>
+            <div class="popup__text popup__text--tip">(мин. 8 симв)
+            </div>
+          </div><input class="popup__input popup__input--confirm" type="password" name="confirm" placeholder="Повторите пароль" required="required"/>
+          <div class="popup__confirmed popup__confirmed--red"><i class="popup__icon popup__icon--red fa fa-times-circle" aria-hidden="true"> </i>
+            <div class="popup__text popup__text--subj">(не совпадают)
+            </div>
+          </div><input class="popup__agree" type="checkbox" id="hero__agree4" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree4">Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn popup__btn--blue" type="submit" value="Зарегистрироваться"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#auth" title="Авторизация">Я уже зарегистрирован </a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="auth">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Авторизация
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--auth" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/><input class="popup__input popup__input--password" type="password" name="password" placeholder="Введите пароль" required="required"/>
+          <div class="attent-text attent-text--red"><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+            <div class="attent-text__text">Неверный e-mail или пароль. Проверьте правильность ввода данных или используйте функция восстановления пароля.
+            </div>
+          </div><input class="popup__btn popup__btn--blue" type="submit" value="Зарегистрироваться"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#recovery" title="Восстановление">Восстановление пароля</a><a class="popup__link popup__link--center popup-modal" href="#register" title="Зарегистрироваться">Зарегистрироваться</a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="recovery">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Восстановление пароля
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--recovery" action="#" method="post"><input class="popup__input popup__input--email" type="text" name="email" placeholder="Введите e-mail" required="required"/>
+          <div class="attent-text attent-text--red"><i class="attent-text__icon fa fa-info-circle" aria-hidden="true"></i>
+            <div class="attent-text__text">Такой e-mail адрес в нашей базе не зарегистрирован. Проверьте правильность ввода и попробуйте еще раз.
+            </div>
+          </div><input class="popup__btn popup__btn--blue" type="submit" value="Восстановить пароль"/>
+        </form><a class="popup__link popup__link--center popup-modal" href="#auth" title="Авторизация">Я все-таки вспомнил свой пароль</a><a class="popup__link popup__link--center popup-modal" href="#register" title="Зарегистрироваться">Зарегистрироваться</a>
+      </div>
+    </div>
+    <div class="popup popup--auth mfp-hide" id="oneclick">
+      <div class="popup__head"> 
+        <h2 class="popup__title">Заказ в 1 клик
+        </h2>
+        <div class="popup__close">
+          <div class="popup__close-text">Закрыть <i class="popup__cross fa fa-times-circle-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup__block">
+        <form class="popup__form popup__form--oneclick"> 
+          <select class="popup__select">
+            <option class="popup__service" selected="selected">Выписка из ЕГРН об основных характерист...
+            </option>
+            <option class="popup__service">Выписка из ЕГРН о переходе прав на объект...
+            </option>
+            <option class="popup__service">Выписка из ЕГРН о кадастровой стоимости
+            </option>
+          </select>
+          <div class="tabs hero__tabs">
+            <div class="tabs__controls">
+              <div class="tabs__tab tabs__tab--1 active">Адрес объекта
+              </div>
+              <div class="tabs__tab tabs__tab--2">Кадастровый номер
+              </div>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__form tabs__form--adress active">
+                <fieldset class="tabs__inputs"><input class="tabs__sity" type="text" name="sity" placeholder="Населенный пункт"/><input class="tabs__street" type="text" name="street" placeholder="Название улицы"/><input class="tabs__house" type="text" name="house" placeholder="Номер дома"/><input class="tabs__room" type="text" name="room" placeholder="Квартира"/>
+                </fieldset>
+              </div>
+              <div class="tabs__form tabs__form--kadastr">
+                <fieldset class="tabs__inputNumbers"><input class="tabs__kNumber" type="text" name="kNumber" placeholder="Введите кадастровый номер" required="required"/>
+                  <div class="tabs__example">Например: 78:32:0001664:1015
+                  </div><a class="tabs__knowhow" href="#">Как узнать кадастровый номер?</a>
+                </fieldset>
+              </div>
+            </div>
+          </div><hr class="popup__hr"/>
+          <fieldset class="popup__promo"> <input class="popup__input popup__input--code" type="text" name="code" placeholder="Введите промокод"/>
+            <div class="popup__price"> 
+              <div class="popup__text popup__text--cost">Стоимость <br>услуги:
+              </div>
+              <div class="popup__text popup__text--sum">59
+              </div>
+              <div class="popup__text popup__text--accent">От 5 выписок <br>цена до 25 руб.
+              </div>
+            </div>
+          </fieldset><hr class="popup__hr"/><input class="popup__agree" type="checkbox" id="hero__agree3" name="agree" required="required" checked="checked"/>
+          <label class="popup__checkbox popup__checkbox--min" for="hero__agree3">Нажимая кнопку «Оформить заказ», я подтверждаю свою дееспособность, согласие на обработку персональных данных в соответствии с указанным "Пользовательским соглашением" и "Положением о конфиденциальности"
+          </label><input class="popup__btn" type="submit" value="Оформить заказ и перейти к оплате"/><a class="popup__link popup__link--center" href="#" title="Перейти">Перейти на страницу описания услуги</a>
+        </form>
+      </div>
+    </div>
+    <!--Боремся с устаревшими браузерами-->
+    <script src="https://yastatic.net/browser-updater/v1/script.js"></script>
+    <script>
+      var yaBrowserUpdater = new ya.browserUpdater.init({
+      	"lang": "ru"
+      	, "browsers": {
+      		"yabrowser": "15.10"
+      		, "chrome": "52"
+      		, "ie": "9"
+      		, "opera": "40"
+      		, "safari": "8"
+      		, "fx": "47"
+      		, "iron": "35"
+      		, "flock": "Infinity"
+      		, "palemoon": "25"
+      		, "camino": "Infinity"
+      		, "maxthon": "4.5"
+      		, "seamonkey": "2.3"
+      	}
+      	, "theme": "blue"
+      });
+    </script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
