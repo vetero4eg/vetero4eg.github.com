@@ -53,6 +53,9 @@
 			</svg>
 		</div>
 	</div>
+	<a href="#" class="scrollTop" title="ВВЕРХ">
+		<i class="far fa-angle-up"></i>
+	</a>
 	<div class="mobile-menu">
 		<div class="mobile-menu-logo">
 			<img class="logo-mob" src="img/mobMenuLogo.png" alt="logo">
@@ -65,20 +68,20 @@
 				</svg>
 			</div>
 			<nav class="mobile">
-				<a href="/">
-					<li class="mobile-item">Главная</li>
+				<a class="mobile-item active" href="/">
+					Главная
 				</a>
-				<a href="#">
-					<li class="mobile-item">О компании</li>
+				<a class="mobile-item" href="#">
+					О компании
 				</a>
-				<a href="#">
-					<li class="mobile-item">Услуги</li>
+				<a class="mobile-item" href="#">
+					Услуги
 				</a>
-				<a href="#">
-					<li class="mobile-item">Вакансии</li>
+				<a class="mobile-item" href="#">
+					Вакансии
 				</a>
-				<a href="#">
-					<li class="mobile-item">Контакты</li>
+				<a class="mobile-item" href="#">
+					Контакты
 				</a>
 			</nav>
 			<div class="soc soc-mobile">
@@ -1056,6 +1059,28 @@
 			($preloader = $(".loaderWrapper")), ($loader = $preloader.find(".loader"));
 			$loader.fadeOut();
 			$preloader.delay(350).fadeOut("slow");
+		});
+	</script>
+	<!--Боремся с устаревшими браузерами-->
+	<script src="https://yastatic.net/browser-updater/v1/script.js"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru"
+			, "browsers": {
+				"yabrowser": "15.10"
+				, "chrome": "52"
+				, "ie": "9"
+				, "opera": "40"
+				, "safari": "8"
+				, "fx": "47"
+				, "iron": "35"
+				, "flock": "Infinity"
+				, "palemoon": "25"
+				, "camino": "Infinity"
+				, "maxthon": "4.5"
+				, "seamonkey": "2.3"
+			}
+			, "theme": "blue"
 		});
 	</script>
 	<script src="js/scripts.min.js"></script>
