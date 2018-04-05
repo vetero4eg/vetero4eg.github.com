@@ -27,7 +27,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!--фавикон-->
-    <link rel="stylesheet" type="text/css" href="css/main.css?2">
+    <link rel="stylesheet" type="text/css" href="css/main.css?4">
   </head>
   <body class="index-page">
     <div id="loader-wrapper">
@@ -685,6 +685,18 @@
         </button>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function() {
+      	($preloader = $("#loader-wrapper")), ($loader = $preloader.find("#loader"));
+      	$loader.fadeOut();
+      	$preloader.delay(350).fadeOut("slow");
+      });
+    </script>
+    <script acync src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script acync src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script acync src="js/libs.min.js?2"></script>
+    <script acync src="js/main.js?2"></script>
     <!--Боремся с устаревшими браузерами-->
     <script src="https://yastatic.net/browser-updater/v1/script.js"></script>
     <script>
@@ -705,15 +717,6 @@
       		, "seamonkey": "2.3"
       	}
       	, "theme": "blue"
-      });
-    </script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      $(window).on("load", function() {
-      	($preloader = $("#loader-wrapper")), ($loader = $preloader.find("#loader"));
-      	$loader.fadeOut();
-      	$preloader.delay(350).fadeOut("slow");
       });
     </script>
   </body>
