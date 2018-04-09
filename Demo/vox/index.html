@@ -10,7 +10,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="img/logo.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -39,7 +39,7 @@
 
 </head>
 
-<body>
+<body class="mainpage">
 
 	<!-- Custom HTML -->
 
@@ -71,7 +71,7 @@
 				<a class="mobile-item active" href="/">
 					Главная
 				</a>
-				<a class="mobile-item" href="#">
+				<a class="mobile-item" href="inner.html">
 					О компании
 				</a>
 				<a class="mobile-item" href="#">
@@ -176,7 +176,7 @@
 									<a href="/">Главная</a>
 								</li>
 								<li class="nav-item">
-									<a href="#">О компании</a>
+									<a href="inner.html">О компании</a>
 								</li>
 								<li class="nav-item">
 									<a href="#">Услуги</a>
@@ -263,7 +263,6 @@
 							</svg>
 						</div>
 					-->
-					
 					</div>
 					<div class="col-lg-6 col-sm-9 col-12 info">
 						<!--здесь приходится идти против СЕО, тег h1 в мозиле будет больше, чем надо и это не удается отловить-->
@@ -896,10 +895,10 @@
 				<div class="col-3 offset-lg-0 offset-1 footer-menu">
 					<ul class="footer__nav">
 						<li class="footer__item">
-							<a href="#" class="footer__link">Главная</a>
+							<a href="/" class="footer__link">Главная</a>
 						</li>
 						<li class="footer__item">
-							<a href="#" class="footer__link">О компании</a>
+							<a href="inner.html" class="footer__link">О компании</a>
 						</li>
 						<li class="footer__item">
 							<a href="#" class="footer__link">Услуги</a>
@@ -1033,7 +1032,7 @@
 				<div class="col-lg-5 col-sm-7 col-8">
 					<p class="copy">© 2017 "Вокс Комм" Все права защищены.<br> Использование любых материалов только с согласия Правообладателя</p>
 				</div>
-				<div class="col-lg-4 offset-lg-4 col-8 offset-sm-3 offset-4 footer__online">
+				<div class="col-xl-3 col-lg-4 offset-lg-0 col-8 offset-sm-3 offset-4 footer__online">
 					<a href="mailto:info@vox-com.ru" class="mail">
 						<i class="fal fa-envelope-open"></i>
 						info@vox-com.ru 
@@ -1063,7 +1062,7 @@
 		});
 	</script>
 	<!--Боремся с устаревшими браузерами-->
-	<script defer="defer" src="https://yastatic.net/browser-updater/v1/script.js"></script>
+	<script acync src="https://yastatic.net/browser-updater/v1/script.js"></script>
 	<script>
 		var yaBrowserUpdater = new ya.browserUpdater.init({
 			"lang": "ru"
