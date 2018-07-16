@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoffeeRun</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="container">
+    <header>
+        <h1>CoffeeRun</h1>
+    </header>
+     <section>
+         <div class="panel panel-default">
+             <div class="panel-body">
+                <form data-coffee-order="form" action="">
+                    <div class="form-group">
+                        <label for="coffeeOrder">Coffee Order</label>
+                        <input type="text" class="form-control" name="coffee" id="coffeeOrder" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" name="emailAddress" id="emailInput" value="" placeholder="dr@who.com" required>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="short">
+                            Short
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="tall" checked>
+                            Tall
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="grande">
+                            Grande
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="coffeezilla">
+                            CoffeeZilla
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="flavorShot">Flavor Shot</label>
+                        <select name="flavor" id="flavorShot" class="form-control">
+                            <option value="">None</option>
+                            <option value="caramel">Caramel</option>
+                            <option value="almond">Almond</option>
+                            <option value="mocha">Mocha</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="strengthLevel">Cafeine Rating:
+                            <span data-strength-val="lite" id="strengthShow">30</span>
+                        </label>
+                        <input type="range" name="strength" class="form-control-range" id="strengthLevel" value="30">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                    <button style="display: none" id="showModal" data-toggle="modal" data-target="#modal"></button>
+                </form>
+             </div>
+         </div>
+     </section>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Achievement</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <p>Your coffee so big and so strength! WOW!</p>
+                <p>Would you like to choose a bonus?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Yes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/truck.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+</html>
